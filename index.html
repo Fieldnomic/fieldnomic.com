@@ -1,0 +1,3074 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fieldnomic | Terra M1 In-Situ Soil Nitrogen &amp; Nitrate Sensor &bull; Continuous Root-Zone Telemetry</title>
+  <meta name="description" content="Fieldnomic develops Terra M1, an all-inorganic, solid-state soil nitrogen sensor and continuous root-zone nitrate (NO3-N), pore-water salinity (EC), and moisture probe in Munich. Reagent-free buried soil nitrogen monitoring with zero polymer membrane drift." />
+  <meta name="keywords" content="Fieldnomic, Terra M1, soil nitrogen sensor, in-situ soil nitrate sensor, continuous soil nitrogen probe, real-time soil nutrient sensor, root-zone nitrate monitoring, pore-water salinity sensor, closed-loop fertigation sensor, SDI-12 soil sensor" />
+  <meta name="author" content="Fieldnomic R&D, Munich" />
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large" />
+  <meta name="theme-color" content="#fbf9f5" />
+  <link rel="canonical" href="https://fieldnomic.com/" />
+
+  <!-- OpenGraph / LinkedIn / WhatsApp Preview Metadata -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://fieldnomic.com/" />
+  <meta property="og:site_name" content="Fieldnomic · Terra M1 Soil Nitrogen Sensor" />
+  <meta property="og:title" content="Fieldnomic | Terra M1 In-Situ Soil Nitrogen &amp; Nitrate Sensor" />
+  <meta property="og:description" content="Continuous root-zone soil nitrogen (NO3-N), salinity, and moisture telemetry without wet reagents, vacuum pumps, or polymer membrane drift. Pre-commercial R&amp;D by Fieldnomic in Munich." />
+  <meta property="og:locale" content="en_US" />
+
+  <!-- Twitter / X Card Metadata -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Fieldnomic | Terra M1 In-Situ Soil Nitrogen &amp; Nitrate Sensor" />
+  <meta name="twitter:description" content="All-inorganic, solid-state buried soil nitrogen sensor for continuous root-zone nitrate (NO3-N), pore-water EC, and moisture monitoring." />
+
+  <!-- Inline SVG Favicon (Prevents 404 favicon errors in Google Search Console) -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23141413'/%3E%3Ccircle cx='16' cy='16' r='6' fill='%23c85a17'/%3E%3C/svg%3E" />
+
+  <!-- Schema.org JSON-LD Structured Data (Product + FAQPage for Rich Search & AI Citations) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Product",
+        "name": "Terra M1 In-Situ Soil Nitrogen Sensor",
+        "alternateName": ["Terra M1 Soil Nitrate Sensor", "Terra M1 Root-Zone Nutrient Probe"],
+        "brand": {
+          "@type": "Brand",
+          "name": "Fieldnomic"
+        },
+        "category": "Soil Nitrogen Sensor / Agricultural & Environmental Instrumentation",
+        "description": "All-inorganic, solid-state buried soil nitrogen sensor designed for continuous in-situ measurement of root-zone nitrate nitrogen (NO3-N), pore-water electrical conductivity (ECpw), and volumetric soil moisture without wet reagents or polymer membranes.",
+        "additionalProperty": [
+          { "@type": "PropertyValue", "name": "Measured Analytes", "value": "Soil Nitrate Nitrogen (NO3-N), Pore-Water Salinity (ECpw), Volumetric Soil Moisture, Soil Temperature" },
+          { "@type": "PropertyValue", "name": "Target NO3-N Precision", "value": "< 1 mg/L (Simulation Target)" },
+          { "@type": "PropertyValue", "name": "Target Equilibration Time", "value": "< 15 minutes" },
+          { "@type": "PropertyValue", "name": "Sorption Hysteresis", "value": "0.0%" },
+          { "@type": "PropertyValue", "name": "Field Interfaces", "value": "SDI-12, RS-485 Modbus RTU, Digital UART" }
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Why does a soil nitrogen sensor focus on measuring nitrate (NO3-N) in pore water?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "In aerated agricultural soils, ammonium (NH4+) is rapidly converted into nitrate (NO3-) by soil nitrifying bacteria. As a result, dissolved nitrate in pore water accounts for 80% to 95% of mobile plant-available nitrogen and nearly 100% of nitrogen lost to groundwater leaching and denitrification."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Why do conventional buried soil nitrogen and nitrate ISE sensors drift after a few weeks?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Conventional Ion-Selective Electrodes (ISEs) rely on soft plasticized PVC membranes, organic ionophores, and Ag/AgCl reference gels. In biologically active soil, biofilms and humic acids foul the membrane while reference potentials drift (~4% concentration error per 1 mV shift). Solid-state mineral sorbents avoid soft gels but suffer from desorption hysteresis during rain washout. Terra M1 uses an all-inorganic, reagent-free architecture with zero chemical binding and 0.0% washout hysteresis."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How is a selective soil nitrogen sensor different from a standard soil EC sensor?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Standard electrical conductivity (EC) sensors measure total dissolved salts and cannot distinguish nutrient nitrate (NO3-) from non-nutrient salts like chloride (Cl-), sulfate (SO4 2-), or sodium (Na+). Terra M1 measures nitrate selectively alongside pore-water EC and bulk moisture so fertigation controllers can dose nitrogen accurately even when background salinity fluctuates."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can the Terra M1 soil nitrogen sensor connect to existing data loggers and agricultural robots?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. Terra M1 is designed with a hard mineral sensing face and a low-profile 4.2 mm blade that outputs calibrated nitrate, salinity, moisture, and temperature telemetry over standard SDI-12, RS-485 Modbus RTU, and digital UART buses."
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <style>
+    :root {
+      --color-paper: #fbf9f5;
+      --color-paper-2: #f2efe9;
+      --color-paper-3: #e6e1d6;
+      --color-card: rgba(255, 255, 255, 0.88);
+      --color-card-solid: #ffffff;
+      --color-ink: #141413;
+      --color-ink-2: #3b3b38;
+      --color-ink-muted: #686763;
+      --color-accent: #c85a17;
+      --color-accent-hover: #a8460c;
+      --color-accent-soft: rgba(200, 90, 23, 0.10);
+      --color-green: #15803d;
+      --color-green-soft: rgba(21, 128, 61, 0.09);
+      --color-err: #dc2626;
+      --color-border: rgba(20, 20, 19, 0.08);
+      --color-border-strong: rgba(20, 20, 19, 0.15);
+      --shadow-soft: 0 20px 50px rgba(20, 20, 19, 0.06), 0 4px 14px rgba(20, 20, 19, 0.04);
+      --shadow-pill: 0 8px 24px rgba(20, 20, 19, 0.07);
+      --font-display: "Plus Jakarta Sans", -apple-system, BlinkMacSystemFont, "SF Pro Display", sans-serif;
+      --font-sans: "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
+      --font-mono: "JetBrains Mono", monospace;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html, body {
+      width: 100%;
+      overflow-x: clip;
+      background-color: var(--color-paper);
+      color: var(--color-ink);
+      font-family: var(--font-sans);
+      -webkit-font-smoothing: antialiased;
+    }
+
+    h1, h2, h3, h4 {
+      font-family: var(--font-display);
+      font-style: normal;
+      font-weight: 700;
+      letter-spacing: -0.028em;
+      line-height: 1.1;
+      color: var(--color-ink);
+      overflow-wrap: anywhere;
+      min-width: 0;
+    }
+
+    .stage-backdrop {
+      position: fixed;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      background: radial-gradient(circle at 60% 44%, #ffffff 0%, #f6f3ec 48%, #eae4d8 100%);
+      z-index: 0;
+      pointer-events: none;
+    }
+
+    #three-canvas, #callout-canvas {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      display: block;
+      transition: opacity 260ms ease;
+    }
+
+    #three-canvas {
+      z-index: 1;
+      pointer-events: none;
+    }
+
+    #callout-canvas {
+      z-index: 2;
+      pointer-events: auto;
+      cursor: grab;
+    }
+
+    #callout-canvas:active {
+      cursor: grabbing;
+    }
+
+    .nav-wrapper {
+      position: fixed;
+      top: 18px;
+      left: 0;
+      right: 0;
+      display: flex;
+      justify-content: center;
+      padding: 0 16px;
+      z-index: 60;
+      pointer-events: none;
+    }
+
+    .nav-pill {
+      pointer-events: auto;
+      display: inline-flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 34px;
+      width: fit-content;
+      max-width: 100%;
+      height: 54px;
+      padding: 6px 6px 6px 22px;
+      background: rgba(255, 253, 249, 0.72);
+      backdrop-filter: blur(24px) saturate(150%);
+      -webkit-backdrop-filter: blur(24px) saturate(150%);
+      border: 1px solid rgba(20, 20, 19, 0.06);
+      border-radius: 15px;
+      box-shadow: 0 6px 24px rgba(20, 20, 19, 0.05), 0 1px 3px rgba(20, 20, 19, 0.03);
+    }
+
+    .brand-link {
+      font-family: var(--font-display);
+      font-size: 18px;
+      font-weight: 800;
+      letter-spacing: -0.035em;
+      color: var(--color-ink);
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      white-space: nowrap;
+    }
+
+    .brand-dot {
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background: var(--color-accent);
+      display: inline-block;
+    }
+
+    .brand-model {
+      font-family: var(--font-mono);
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.02em;
+      color: var(--color-ink-2);
+      background: rgba(20, 20, 19, 0.06);
+      padding: 2px 6px;
+      border-radius: 5px;
+      margin-left: 1px;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 26px;
+    }
+
+    .nav-link {
+      font-size: 14px;
+      font-weight: 500;
+      color: rgba(20, 20, 19, 0.78);
+      text-decoration: none;
+      white-space: nowrap;
+      transition: color 140ms ease;
+    }
+
+    .nav-link:hover, .nav-link.active {
+      color: var(--color-ink);
+      font-weight: 600;
+    }
+
+    .nav-cta {
+      pointer-events: auto;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      height: 42px;
+      padding: 0 18px;
+      border-radius: 10px;
+      background: #f5c665;
+      color: var(--color-ink);
+      font-family: var(--font-sans);
+      font-size: 14px;
+      font-weight: 500;
+      text-decoration: none;
+      white-space: nowrap;
+      transition: background 140ms ease, transform 120ms ease;
+    }
+
+    .nav-cta:hover {
+      background: #eeb94d;
+      transform: translateY(-1px);
+    }
+
+    .nav-cta:active {
+      transform: translateY(0);
+    }
+
+    .btn {
+      pointer-events: auto;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      font-family: var(--font-sans);
+      font-size: 14px;
+      font-weight: 500;
+      text-decoration: none;
+      padding: 11px 20px;
+      border-radius: 10px;
+      border: 1px solid transparent;
+      background: var(--color-ink);
+      color: #ffffff;
+      cursor: pointer;
+      white-space: nowrap;
+      transition: transform 120ms ease, background 150ms ease, box-shadow 150ms ease;
+    }
+
+    .btn:hover, .btn.is-hover {
+      background: #2b2b29;
+      transform: translateY(-1px);
+      box-shadow: 0 6px 18px rgba(20, 20, 19, 0.14);
+    }
+
+    .btn-gold {
+      background: #f5c665;
+      color: var(--color-ink);
+      font-weight: 500;
+    }
+
+    .btn-gold:hover {
+      background: #eeb94d;
+      color: var(--color-ink);
+      box-shadow: 0 6px 18px rgba(200, 140, 23, 0.18);
+    }
+
+    .btn:focus-visible, .btn.is-focus {
+      outline: 2px solid var(--color-accent);
+      outline-offset: 3px;
+    }
+
+    .btn:active, .btn.is-active {
+      transform: translateY(1px);
+    }
+
+    .btn:disabled, .btn.is-disabled {
+      opacity: 0.45;
+      cursor: not-allowed;
+      pointer-events: none;
+    }
+
+    .btn-sm {
+      font-size: 13px;
+      padding: 8px 16px;
+    }
+
+    .btn-secondary {
+      background: rgba(20, 20, 19, 0.05);
+      color: var(--color-ink);
+      border: 1px solid var(--color-border-strong);
+    }
+
+    .btn-secondary:hover, .btn-secondary.active {
+      background: rgba(20, 20, 19, 0.10);
+      color: var(--color-ink);
+      box-shadow: none;
+    }
+
+    .story-float-card {
+      position: fixed;
+      top: 50%;
+      left: 36px;
+      transform: translateY(-50%) translateX(-24px);
+      width: 380px;
+      background: var(--color-card);
+      backdrop-filter: blur(24px);
+      -webkit-backdrop-filter: blur(24px);
+      border: 1px solid var(--color-border-strong);
+      border-radius: 24px;
+      padding: 28px;
+      box-shadow: var(--shadow-soft);
+      z-index: 25;
+      pointer-events: none;
+      opacity: 0;
+      visibility: hidden;
+      transition: opacity 140ms ease, transform 140ms ease, visibility 140ms ease;
+    }
+
+    .story-float-card.visible {
+      opacity: 1;
+      visibility: visible;
+      transform: translateY(-50%) translateX(0);
+    }
+
+    .sf-step-pills {
+      display: flex;
+      gap: 6px;
+      margin-bottom: 16px;
+      pointer-events: auto;
+    }
+
+    .sf-dot {
+      height: 5px;
+      flex: 1;
+      border-radius: 4px;
+      background: rgba(20, 20, 19, 0.12);
+      cursor: pointer;
+      transition: background 200ms ease, transform 120ms ease;
+    }
+
+    .sf-dot:hover {
+      background: rgba(200, 90, 23, 0.45);
+    }
+
+    .sf-dot.active {
+      background: var(--color-accent);
+    }
+
+    .sf-eyebrow {
+      font-family: var(--font-mono);
+      font-size: 11px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: var(--color-accent);
+      margin-bottom: 8px;
+    }
+
+    .sf-title {
+      font-size: 23px;
+      margin-bottom: 12px;
+      color: var(--color-ink);
+    }
+
+    .sf-body {
+      font-size: 14px;
+      line-height: 1.6;
+      color: var(--color-ink-2);
+      margin-bottom: 20px;
+    }
+
+    .sf-highlight {
+      padding-top: 16px;
+      border-top: 1px solid var(--color-border);
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      gap: 12px;
+    }
+
+    .sf-stat-big {
+      font-family: var(--font-display);
+      font-size: 22px;
+      font-weight: 800;
+      color: var(--color-ink);
+      letter-spacing: -0.02em;
+    }
+
+    .sf-stat-lbl {
+      font-family: var(--font-mono);
+      font-size: 10.5px;
+      font-weight: 600;
+      color: var(--color-green);
+      text-align: right;
+      text-transform: uppercase;
+    }
+
+    .scroll-pill {
+      position: fixed;
+      bottom: 22px;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 30;
+      background: rgba(255, 253, 249, 0.82);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border: 1px solid rgba(20, 20, 19, 0.08);
+      border-radius: 10px;
+      padding: 8px 16px;
+      font-family: var(--font-mono);
+      font-size: 11px;
+      font-weight: 500;
+      color: var(--color-ink-2);
+      box-shadow: 0 4px 16px rgba(20, 20, 19, 0.05);
+      pointer-events: none;
+      white-space: nowrap;
+      transition: opacity 200ms ease;
+    }
+
+    .scroll-world {
+      position: relative;
+      z-index: 10;
+      pointer-events: none;
+    }
+
+    .scene-spacer {
+      height: 105vh;
+      width: 100%;
+    }
+
+    .hero-overlay {
+      position: relative;
+      width: 100%;
+      height: 100vh;
+      max-width: 1180px;
+      margin: 0 auto;
+      padding: 92px 32px 36px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      pointer-events: none;
+    }
+
+    .hero-left-col {
+      max-width: 490px;
+      text-align: left;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 15px;
+      background: rgba(251, 249, 245, 0.86);
+      backdrop-filter: blur(18px);
+      -webkit-backdrop-filter: blur(18px);
+      padding: 30px;
+      border-radius: 24px;
+      border: 1px solid var(--color-border-strong);
+      box-shadow: var(--shadow-soft);
+      pointer-events: auto;
+    }
+
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      padding: 5px 11px;
+      border-radius: 7px;
+      background: var(--color-accent-soft);
+      color: var(--color-accent);
+      font-family: var(--font-mono);
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+    }
+
+    .hero-headline {
+      font-size: clamp(28px, 3.6vw, 42px);
+      font-weight: 800;
+      letter-spacing: -0.03em;
+      line-height: 1.08;
+      color: var(--color-ink);
+    }
+
+    .hero-sub {
+      font-size: 14.5px;
+      line-height: 1.6;
+      color: var(--color-ink-2);
+    }
+
+    .hero-cta-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 4px;
+    }
+
+    .hero-mini-Metrics {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 12px;
+      width: 100%;
+      padding-top: 16px;
+      margin-top: 4px;
+      border-top: 1px solid var(--color-border-strong);
+    }
+
+    .hmm-val {
+      font-family: var(--font-display);
+      font-size: 17px;
+      font-weight: 800;
+      color: var(--color-ink);
+    }
+
+    .hmm-lbl {
+      font-family: var(--font-mono);
+      font-size: 9.5px;
+      color: var(--color-ink-muted);
+      line-height: 1.35;
+      text-transform: uppercase;
+    }
+
+    .showcase-section {
+      position: relative;
+      z-index: 35;
+      pointer-events: auto;
+      padding: 100px 32px 84px;
+      scroll-margin-top: 64px;
+      background: linear-gradient(to bottom, rgba(251, 249, 245, 0.0) 0%, rgba(251, 249, 245, 0.96) 64px, var(--color-paper) 110px, var(--color-paper) 100%);
+    }
+
+    .sc-container {
+      max-width: 1140px;
+      margin: 0 auto;
+    }
+
+    .sc-header {
+      text-align: center;
+      margin-bottom: 48px;
+    }
+
+    .sc-eyebrow {
+      font-family: var(--font-mono);
+      font-size: 11.5px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--color-accent);
+      margin-bottom: 10px;
+    }
+
+    .sc-title {
+      font-size: clamp(28px, 4vw, 46px);
+      font-weight: 800;
+      letter-spacing: -0.03em;
+      margin-bottom: 14px;
+    }
+
+    .sc-lead {
+      font-size: 16px;
+      line-height: 1.6;
+      color: var(--color-ink-muted);
+      max-width: 690px;
+      margin: 0 auto;
+    }
+
+    /* ANIMATED BOTTLENECK CARDS & 12-COLUMN BENTO APPLICATION GRID */
+    @keyframes sweepTrace {
+      0%   { stroke-dashoffset: 100; opacity: 0.25; }
+      10%  { opacity: 1.0; }
+      72%  { stroke-dashoffset: 0; opacity: 1.0; }
+      88%  { stroke-dashoffset: 0; opacity: 1.0; }
+      100% { stroke-dashoffset: 0; opacity: 0.0; }
+    }
+
+    @keyframes peakAppear {
+      0%, 34%  { opacity: 0.0; transform: scale(0.6); }
+      45%, 88% { opacity: 1.0; transform: scale(1.0); }
+      100%     { opacity: 0.0; transform: scale(0.8); }
+    }
+
+    @keyframes endAppear {
+      0%, 62%  { opacity: 0.0; }
+      72%, 88% { opacity: 1.0; }
+      100%     { opacity: 0.0; }
+    }
+
+    @keyframes raceLeach100 {
+      0%        { width: 0%; opacity: 1; }
+      22%, 88%  { width: 100%; opacity: 1; }
+      100%      { width: 100%; opacity: 0; }
+    }
+
+    @keyframes raceLab100 {
+      0%        { width: 0%; opacity: 1; }
+      82%, 88%  { width: 100%; opacity: 1; }
+      100%      { width: 100%; opacity: 0; }
+    }
+
+    @keyframes packetFlow {
+      0%   { stroke-dashoffset: 24; }
+      100% { stroke-dashoffset: 0; }
+    }
+
+    @keyframes barPulse {
+      0%, 100% { opacity: 0.78; }
+      50%      { opacity: 1.0; }
+    }
+
+    @keyframes cardFloatIn {
+      0%   { opacity: 0.0; transform: translateY(14px); }
+      100% { opacity: 1.0; transform: translateY(0); }
+    }
+
+    .reveal-card {
+      opacity: 1;
+      transform: translateY(0);
+      transition:
+        transform 240ms cubic-bezier(0.22, 1, 0.36, 1),
+        border-color 200ms ease,
+        box-shadow 220ms ease;
+    }
+
+    .reveal-card.animate-in {
+      animation: cardFloatIn 460ms cubic-bezier(0.22, 1, 0.36, 1) both;
+    }
+
+    .magnitude-grid {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 18px;
+      margin-bottom: 96px;
+    }
+
+    .mag-card {
+      position: relative;
+      overflow: hidden;
+      background: var(--color-card-solid);
+      border: 1px solid var(--color-border-strong);
+      border-radius: 20px;
+      padding: 22px 20px 20px;
+      box-shadow: var(--shadow-soft);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 14px;
+    }
+
+    .mag-card::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(380px circle at var(--mx, 50%) var(--my, 0%), rgba(200, 90, 23, 0.07), transparent 60%);
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 250ms ease;
+    }
+
+    .mag-card:hover, .uc-card:hover {
+      transform: translateY(-4px);
+      border-color: rgba(200, 90, 23, 0.34);
+      box-shadow: 0 24px 54px rgba(20, 20, 19, 0.09), 0 6px 18px rgba(200, 90, 23, 0.06);
+    }
+
+    .mag-card:hover::before, .uc-card:hover::before {
+      opacity: 1;
+    }
+
+    .mag-top-row {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      gap: 8px;
+    }
+
+    .mag-val {
+      font-family: var(--font-display);
+      font-size: clamp(22px, 2.3vw, 29px);
+      font-weight: 800;
+      color: var(--color-ink);
+      letter-spacing: -0.03em;
+      white-space: nowrap;
+    }
+
+    .mag-chip {
+      font-family: var(--font-mono);
+      font-size: 9.5px;
+      font-weight: 600;
+      padding: 3px 7px;
+      border-radius: 6px;
+      background: var(--color-accent-soft);
+      color: var(--color-accent);
+      text-transform: uppercase;
+      white-space: nowrap;
+    }
+
+    .mag-viz {
+      width: 100%;
+      height: 76px;
+      background: #f6f3ec;
+      border: 1px solid rgba(20, 20, 19, 0.07);
+      border-radius: 12px;
+      padding: 10px 12px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .mag-viz svg {
+      width: 100%;
+      height: 100%;
+      display: block;
+      overflow: visible;
+    }
+
+    .mag-lbl {
+      font-family: var(--font-mono);
+      font-size: 10.5px;
+      font-weight: 600;
+      text-transform: uppercase;
+      color: var(--color-accent);
+      margin-bottom: 5px;
+    }
+
+    .mag-desc {
+      font-size: 13px;
+      line-height: 1.52;
+      color: var(--color-ink-muted);
+    }
+
+    /* 12-COLUMN ASYMMETRIC BENTO APPLICATION GRID (7:5 / 5:7 / 6:6) */
+    .usecase-grid {
+      display: grid;
+      grid-template-columns: repeat(12, minmax(0, 1fr));
+      gap: 20px;
+      margin-bottom: 96px;
+    }
+
+    .uc-card {
+      position: relative;
+      overflow: hidden;
+      background: var(--color-card-solid);
+      border: 1px solid var(--color-border-strong);
+      border-radius: 22px;
+      padding: 28px;
+      box-shadow: var(--shadow-soft);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 18px;
+      min-width: 0;
+    }
+
+    .uc-card::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(520px circle at var(--mx, 50%) var(--my, 0%), rgba(200, 90, 23, 0.06), transparent 65%);
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 250ms ease;
+    }
+
+    .uc-span-7 { grid-column: span 7; }
+    .uc-span-5 { grid-column: span 5; }
+    .uc-span-6 { grid-column: span 6; }
+
+    .uc-split {
+      display: grid;
+      grid-template-columns: 1.15fr 1fr;
+      gap: 22px;
+      align-items: center;
+    }
+
+    .uc-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 4px 10px;
+      border-radius: 7px;
+      background: var(--color-paper-2);
+      color: var(--color-accent);
+      font-family: var(--font-mono);
+      font-size: 10.5px;
+      font-weight: 600;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+    }
+
+    .uc-title {
+      font-size: 20px;
+      margin-bottom: 9px;
+      letter-spacing: -0.025em;
+    }
+
+    .uc-body {
+      font-size: 13.8px;
+      line-height: 1.58;
+      color: var(--color-ink-2);
+    }
+
+    .uc-telemetry-box {
+      background: #f6f3ec;
+      border: 1px solid rgba(20, 20, 19, 0.08);
+      border-radius: 14px;
+      padding: 14px 15px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .uct-head {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 8px;
+      font-family: var(--font-mono);
+      font-size: 10px;
+      font-weight: 600;
+      color: var(--color-ink-muted);
+      text-transform: uppercase;
+    }
+
+    .uct-live-dot {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      color: var(--color-green);
+    }
+
+    .uct-live-dot::before {
+      content: "";
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: var(--color-green);
+      animation: barPulse 1.8s infinite ease-in-out;
+    }
+
+    .uct-svg {
+      width: 100%;
+      height: 68px;
+      display: block;
+      overflow: visible;
+    }
+
+    .uct-metrics-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 8px;
+      padding-top: 8px;
+      border-top: 1px solid rgba(20, 20, 19, 0.07);
+      font-family: var(--font-mono);
+      font-size: 10.5px;
+      color: var(--color-ink-2);
+    }
+
+    .uct-metrics-row strong {
+      color: var(--color-ink);
+      font-weight: 700;
+    }
+
+    .uc-footer-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 10px;
+      padding-top: 14px;
+      border-top: 1px solid var(--color-border);
+    }
+
+    .uc-benefit {
+      padding: 7px 12px;
+      border-radius: 8px;
+      background: var(--color-green-soft);
+      color: var(--color-green);
+      font-family: var(--font-mono);
+      font-size: 11px;
+      font-weight: 600;
+    }
+
+    .uc-bus-tag {
+      font-family: var(--font-mono);
+      font-size: 10.5px;
+      color: var(--color-ink-muted);
+    }
+
+    .spec-rows {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      margin-bottom: 88px;
+    }
+
+    .spec-row {
+      display: grid;
+      grid-template-columns: 1.1fr 1.3fr 1.1fr 1.1fr;
+      gap: 18px;
+      align-items: center;
+      padding: 16px 22px;
+      border-radius: 16px;
+      background: var(--color-paper-2);
+      font-size: 13.5px;
+    }
+
+    .spec-row.header-row {
+      background: var(--color-ink);
+      color: #ffffff;
+      font-family: var(--font-mono);
+      font-size: 11px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    .spec-row:nth-child(even):not(.header-row) {
+      background: var(--color-card-solid);
+      border: 1px solid var(--color-border);
+    }
+
+    .sr-col-title {
+      font-family: var(--font-display);
+      font-weight: 700;
+      color: var(--color-ink);
+    }
+
+    .sr-col-terra {
+      font-weight: 700;
+      color: var(--color-green);
+    }
+
+    .sr-col-legacy {
+      color: var(--color-ink-muted);
+    }
+
+    .sr-only {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      margin: -1px;
+      overflow: hidden;
+      clip: rect(0, 0, 0, 0);
+      white-space: nowrap;
+      border: 0;
+    }
+
+    /* TECHNICAL FAQ ACCORDION SECTION (SEO & RESEARCHER Q&A) */
+    .faq-section {
+      margin-bottom: 88px;
+    }
+
+    .faq-list {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 16px;
+      align-items: start;
+    }
+
+    .faq-item {
+      background: var(--color-card-solid);
+      border: 1px solid var(--color-border-strong);
+      border-radius: 18px;
+      padding: 20px 22px;
+      box-shadow: var(--shadow-soft);
+      transition: border-color 180ms ease;
+    }
+
+    .faq-item[open] {
+      border-color: rgba(200, 90, 23, 0.35);
+    }
+
+    .faq-item summary {
+      font-family: var(--font-display);
+      font-size: 15.5px;
+      font-weight: 700;
+      color: var(--color-ink);
+      cursor: pointer;
+      list-style: none;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      line-height: 1.35;
+    }
+
+    .faq-item summary::-webkit-details-marker {
+      display: none;
+    }
+
+    .faq-item summary::after {
+      content: "+";
+      font-family: var(--font-mono);
+      font-size: 16px;
+      font-weight: 600;
+      color: var(--color-accent);
+      flex-shrink: 0;
+      transition: transform 180ms ease;
+    }
+
+    .faq-item[open] summary::after {
+      content: "−";
+    }
+
+    .faq-body {
+      margin-top: 12px;
+      padding-top: 12px;
+      border-top: 1px solid var(--color-border);
+      font-size: 13.5px;
+      line-height: 1.58;
+      color: var(--color-ink-2);
+    }
+
+    #sec-usecases, #sec-benchmark, #sec-waitlist {
+      scroll-margin-top: 92px;
+    }
+
+    .waitlist-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+      gap: 20px;
+      align-items: start;
+      padding-top: 64px;
+      min-height: calc(100vh - 180px);
+      border-top: 1px solid var(--color-border-strong);
+    }
+
+    .wl-card.pulse-highlight {
+      border-color: var(--color-accent);
+      box-shadow: 0 0 0 3px rgba(200, 90, 23, 0.18), var(--shadow-soft);
+      transition: box-shadow 250ms ease, border-color 250ms ease;
+    }
+
+    .thesis-card, .wl-card {
+      background: var(--color-card-solid);
+      border: 1px solid var(--color-border-strong);
+      border-radius: 26px;
+      padding: 34px;
+      box-shadow: var(--shadow-soft);
+      min-width: 0;
+      width: 100%;
+    }
+
+    .thesis-list {
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+      margin-top: 20px;
+    }
+
+    .thesis-item {
+      padding: 14px 16px;
+      border-radius: 16px;
+      background: var(--color-paper);
+      border: 1px solid var(--color-border);
+    }
+
+    .thesis-item strong {
+      display: block;
+      font-family: var(--font-display);
+      font-size: 14.5px;
+      color: var(--color-ink);
+      margin-bottom: 4px;
+    }
+
+    .thesis-item span {
+      font-size: 13px;
+      color: var(--color-ink-muted);
+      line-height: 1.5;
+    }
+
+    .wl-form-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 14px;
+      margin-top: 22px;
+      width: 100%;
+    }
+
+    .wl-field {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+      min-width: 0;
+    }
+
+    .wl-field.full {
+      grid-column: 1 / -1;
+    }
+
+    .wl-field label {
+      font-size: 12px;
+      font-weight: 600;
+      color: var(--color-ink-2);
+    }
+
+    .wl-input {
+      width: 100%;
+      min-width: 0;
+      max-width: 100%;
+      font-family: var(--font-sans);
+      font-size: 14px;
+      padding: 12px 14px;
+      background: var(--color-paper);
+      border: 1px solid var(--color-border-strong);
+      color: var(--color-ink);
+      border-radius: 12px;
+      transition: border-color 140ms ease, background 140ms ease;
+    }
+
+    .wl-input:hover {
+      background: #ffffff;
+    }
+
+    .wl-input:focus-visible {
+      outline: none;
+      border-color: var(--color-accent);
+      background: #ffffff;
+    }
+
+    .wl-input.is-invalid {
+      border-color: var(--color-err);
+      background: rgba(220, 38, 38, 0.03);
+    }
+
+    .wl-input.is-invalid:focus-visible {
+      border-color: var(--color-err);
+      box-shadow: 0 0 0 3px rgba(220, 38, 38, 0.12);
+    }
+
+    .wl-field-err {
+      font-size: 11.5px;
+      font-weight: 500;
+      color: var(--color-err);
+      line-height: 1.35;
+      display: none;
+    }
+
+    .wl-field-err.visible {
+      display: block;
+    }
+
+    .wl-legal-note {
+      font-size: 11.5px;
+      color: var(--color-ink-muted);
+      line-height: 1.45;
+      margin-top: 6px;
+    }
+
+    .wl-status {
+      margin-top: 14px;
+      padding: 12px 16px;
+      font-size: 13px;
+      font-weight: 600;
+      border-radius: 12px;
+      display: none;
+    }
+
+    .wl-status[data-state="loading"] {
+      display: block;
+      background: var(--color-paper-2);
+      color: var(--color-ink-2);
+    }
+
+    .wl-status[data-state="error"] {
+      display: block;
+      background: rgba(220, 38, 38, 0.08);
+      color: var(--color-err);
+    }
+
+    .wl-status[data-state="success"] {
+      display: block;
+      background: var(--color-green-soft);
+      color: var(--color-green);
+    }
+
+    .footer-bar {
+      margin-top: 72px;
+      padding-top: 28px;
+      border-top: 1px solid var(--color-border-strong);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 16px;
+      font-family: var(--font-mono);
+      font-size: 11.5px;
+      color: var(--color-ink-muted);
+    }
+
+    @media (max-width: 1040px) {
+      .magnitude-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+      .usecase-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+      .uc-span-7, .uc-span-5, .uc-span-6 {
+        grid-column: span 1;
+      }
+      .uc-split {
+        grid-template-columns: minmax(0, 1fr);
+      }
+      .waitlist-grid, .faq-list {
+        grid-template-columns: minmax(0, 1fr);
+      }
+      .story-float-card {
+        left: 20px;
+        width: 330px;
+        padding: 24px;
+      }
+    }
+
+    @media (max-width: 820px) {
+      .nav-links {
+        display: none;
+      }
+      .nav-pill {
+        width: 100%;
+        padding: 6px 6px 6px 16px;
+      }
+      .hero-overlay {
+        padding: 80px 16px 20px;
+      }
+      .scroll-pill {
+        display: none;
+      }
+      .story-float-card {
+        top: auto;
+        bottom: 14px;
+        left: 14px;
+        right: 14px;
+        width: auto;
+        padding: 20px;
+        border-radius: 22px;
+        transform: translateY(20px);
+      }
+      .story-float-card.visible {
+        transform: translateY(0);
+      }
+      .sf-title {
+        font-size: 19px;
+      }
+      .sf-body {
+        font-size: 13px;
+        margin-bottom: 12px;
+      }
+      .showcase-section {
+        padding: 72px 16px 56px;
+      }
+      .magnitude-grid, .usecase-grid, .spec-row, .wl-form-grid {
+        grid-template-columns: minmax(0, 1fr);
+      }
+      .spec-row.header-row {
+        display: none;
+      }
+      .spec-row > div[data-label]::before {
+        content: attr(data-label);
+        display: block;
+        font-family: var(--font-mono);
+        font-size: 10px;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 0.04em;
+        color: var(--color-ink-muted);
+        margin-bottom: 2px;
+      }
+      .thesis-card, .wl-card, .uc-card {
+        padding: 22px 18px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- 1. FIXED 3D STAGE -->
+  <div class="stage-backdrop"></div>
+  <canvas id="three-canvas"></canvas>
+  <canvas id="callout-canvas"></canvas>
+
+  <!-- 2. NAVBAR -->
+  <header class="nav-wrapper">
+    <div class="nav-pill">
+      <a href="#sec-intro" class="brand-link">
+        <span class="brand-dot"></span> Fieldnomic <span class="brand-model">Terra M1</span>
+      </a>
+      <nav class="nav-links" aria-label="Primary Navigation">
+        <a href="#sec-intro" class="nav-link active" data-sec="0">Overview</a>
+        <a href="#sec-dissect" class="nav-link" data-sec="1">Hardware</a>
+        <a href="#sec-features" class="nav-link" data-sec="2">Selectivity</a>
+        <a href="#sec-usecases" class="nav-link" data-sec="5">Applications</a>
+        <a href="#sec-benchmark" class="nav-link" data-sec="6">Comparison</a>
+      </nav>
+      <a href="#sec-waitlist" class="nav-cta">Request updates</a>
+    </div>
+  </header>
+
+  <!-- 3. FLOATING RESEARCH NOTES CARD (SCENES 1-4) -->
+  <aside class="story-float-card" id="story-card" aria-live="polite">
+    <div class="sf-step-pills">
+      <span class="sf-dot active" id="dot-0"></span>
+      <span class="sf-dot" id="dot-1"></span>
+      <span class="sf-dot" id="dot-2"></span>
+      <span class="sf-dot" id="dot-3"></span>
+    </div>
+    <div class="sf-eyebrow" id="sf-eyebrow">01 // FIELD FAILURE MODES</div>
+    <h2 class="sf-title" id="sf-title">Why buried soil sensors lose calibration.</h2>
+    <p class="sf-body" id="sf-body">
+      Standard ion-selective electrodes rely on plasticized polymer membranes and reference gels. Once buried in biologically active soil, they foul and drift within a few weeks. Mineral sorbents avoid soft gels but trap ions after a pulse, creating washout memory errors.
+    </p>
+    <div class="sf-highlight">
+      <div class="sf-stat-big" id="sf-stat">0.0% Hysteresis</div>
+      <div class="sf-stat-lbl" id="sf-lbl">No soft polymers<br />No reference gels</div>
+    </div>
+  </aside>
+
+  <!-- 4. SCROLL CUE -->
+  <div class="scroll-pill" id="scroll-cue">
+    &darr; Scroll to inspect the mechanical stackup
+  </div>
+
+  <!-- 5. SCROLLABLE CONTENT -->
+  <main class="scroll-world">
+
+    <!-- SCENE 0: HERO -->
+    <section class="hero-overlay" id="sec-intro">
+      <div class="hero-left-col">
+        <span class="hero-badge">Fieldnomic &bull; Terra M1 In-Situ Soil Nitrogen Sensor R&amp;D</span>
+        <h1 class="hero-headline">Continuous root-zone nitrate, salinity, and moisture without wet reagents.</h1>
+        <p class="hero-sub">
+          More than half of applied synthetic nitrogen is lost to leaching and nitrous oxide emissions because growers and agronomists cannot track nitrate movement underground in real time. <strong>Terra M1</strong> is an all-inorganic, solid-state <strong>soil nitrogen sensor</strong> in development in Munich, designed to stay buried for a full growing season without reference drift.
+        </p>
+        <div class="hero-cta-row">
+          <a href="#sec-waitlist" class="btn btn-gold">Request updates &rarr;</a>
+          <a href="#sec-dissect" class="btn btn-secondary">Inspect probe design &darr;</a>
+        </div>
+        <div class="hero-mini-Metrics">
+          <div>
+            <div class="hmm-val">&lt;1 mg/L</div>
+            <div class="hmm-lbl">Simulated NO<sub>3</sub>-N Target</div>
+          </div>
+          <div>
+            <div class="hmm-val">&lt;15 min</div>
+            <div class="hmm-lbl">Target Response Time</div>
+          </div>
+          <div>
+            <div class="hmm-val">0.0%</div>
+            <div class="hmm-lbl">Washout Hysteresis</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CRAWLABLE SEMANTIC SUMMARY OF 3D CHAPTERS FOR SEARCH ENGINES & SCREEN READERS -->
+    <section class="sr-only" aria-label="Technical Architecture of the Terra M1 Soil Nitrogen Sensor">
+      <h2>In-situ soil nitrogen sensor architecture and failure-mode analysis</h2>
+      <article>
+        <h3>1. Why conventional buried soil nitrogen and nitrate sensors lose calibration</h3>
+        <p>Standard ion-selective electrodes (ISEs) rely on plasticized polymer membranes and Ag/AgCl reference gels that biofoul and drift within weeks underground. Solid-state mineral sorbents avoid soft gels but trap ions after a fertigation pulse, creating washout memory hysteresis.</p>
+      </article>
+      <article>
+        <h3>2. Flush mineral-hard soil interface with passive equilibration</h3>
+        <p>Clamped by a screwless metallic retention frame, an inert mineral barrier blocks soil bacteria and clay particles while allowing dissolved nitrate ions in pore water to equilibrate passively without surface vacuum pumps.</p>
+      </article>
+      <article>
+        <h3>3. Reagent-free soil nitrate selectivity and background compensation</h3>
+        <p>Instead of binding nitrate into a perishable polymer membrane, the hermetically isolated transduction core measures dissolved nitrate (NO3-N) directly and compensates for soil organic matter and temperature on the probe.</p>
+      </article>
+      <article>
+        <h3>4. Unified root-zone nitrate, pore-water salinity, and soil moisture telemetry</h3>
+        <p>Combines reagent-free soil nitrogen sensing with a pore-water electrical conductivity array and a bulk soil moisture waveguide, streaming calibrated data over standard SDI-12, RS-485 Modbus, and robotic UART field buses.</p>
+      </article>
+    </section>
+
+    <!-- SCENE 1 -->
+    <section class="scene-spacer" id="sec-dissect"></section>
+
+    <!-- SCENE 2 -->
+    <section class="scene-spacer" id="sec-features"></section>
+
+    <!-- SCENE 3 -->
+    <section class="scene-spacer" id="sec-core"></section>
+
+    <!-- SCENE 4 -->
+    <section class="scene-spacer" id="sec-auto"></section>
+
+    <!-- SCENE 5: PROBLEM SCALE, RANKED USE CASES, BENCHMARK & WAITLIST -->
+    <section class="showcase-section" id="sec-usecases">
+      <div class="sc-container">
+
+        <!-- PART A: MEASUREMENT BOTTLENECK -->
+        <div class="sc-header">
+          <div class="sc-eyebrow">The Measurement Bottleneck</div>
+          <h2 class="sc-title">Root-zone nitrogen changes in hours, but soil testing still takes days.</h2>
+          <p class="sc-lead">
+            A single heavy rain or fertigation cycle can flush nitrate below the roots in an afternoon. Without a buried sensor that survives full-season soil contact, nutrient management relies on guesswork and delayed lab extracts.
+          </p>
+        </div>
+
+        <div class="magnitude-grid">
+          <!-- Bottleneck Card 1: >70B/yr Global N Mass Balance (NUE ~45% vs Loss ~55%) -->
+          <div class="mag-card reveal-card">
+            <div>
+              <div class="mag-top-row">
+                <div class="mag-val">&gt;&euro;70B / yr</div>
+                <span class="mag-chip">55% Lost</span>
+              </div>
+              <div class="mag-lbl">Unrecovered Nitrogen</div>
+            </div>
+            <div class="mag-viz" aria-hidden="true">
+              <div style="display:flex; flex-direction:column; gap:7px; width:100%;">
+                <div>
+                  <div style="display:flex; justify-content:space-between; font-family:var(--font-mono); font-size:8.5px; color:#15803d; font-weight:600; margin-bottom:2px;">
+                    <span>CROP UPTAKE (NUE)</span><span>45%</span>
+                  </div>
+                  <div style="width:100%; height:7px; background:rgba(20,20,19,0.08); border-radius:4px; overflow:hidden;">
+                    <div style="width:45%; height:100%; background:#15803d; border-radius:4px;"></div>
+                  </div>
+                </div>
+                <div>
+                  <div style="display:flex; justify-content:space-between; font-family:var(--font-mono); font-size:8.5px; color:#c85a17; font-weight:600; margin-bottom:2px;">
+                    <span>LEACHED &amp; VOLATILIZED</span><span>55%</span>
+                  </div>
+                  <div style="width:100%; height:7px; background:rgba(20,20,19,0.08); border-radius:4px; overflow:hidden;">
+                    <div style="width:55%; height:100%; background:#c85a17; border-radius:4px; animation: barPulse 2.2s infinite ease-in-out;"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <p class="mag-desc">Roughly 55% of synthetic nitrogen applied globally leaches into groundwater or volatilizes before crop uptake.</p>
+          </div>
+
+          <!-- Bottleneck Card 2: 273x CO2 Flux Spike (IPCC AR6 GWP100 = 273) -->
+          <div class="mag-card reveal-card">
+            <div>
+              <div class="mag-top-row">
+                <div class="mag-val">273&times; CO<sub>2</sub></div>
+                <span class="mag-chip">100-Yr GWP</span>
+              </div>
+              <div class="mag-lbl">N<sub>2</sub>O Warming Factor</div>
+            </div>
+            <div class="mag-viz" aria-hidden="true">
+              <svg viewBox="0 0 220 54">
+                <line x1="4" y1="43" x2="216" y2="43" stroke="rgba(20,20,19,0.16)" stroke-width="1" />
+                <path d="M 4 42 Q 48 42, 70 38 C 90 34, 102 7, 118 7 C 134 7, 152 36, 180 40 L 216 42" fill="rgba(200,90,23,0.12)" />
+                <path d="M 4 42 Q 48 42, 70 38 C 90 34, 102 7, 118 7 C 134 7, 152 36, 180 40 L 216 42" fill="none" stroke="rgba(200,90,23,0.28)" stroke-width="1.8" />
+                <path pathLength="100" d="M 4 42 Q 48 42, 70 38 C 90 34, 102 7, 118 7 C 134 7, 152 36, 180 40 L 216 42" fill="none" stroke="#c85a17" stroke-width="2.2" stroke-dasharray="100" style="animation: sweepTrace 3.8s infinite ease-out;" />
+                <circle cx="118" cy="7" r="3.2" fill="#c85a17" style="transform-origin: 118px 7px; animation: peakAppear 3.8s infinite ease-out;" />
+                <text x="128" y="13" fill="#c85a17" font-family="JetBrains Mono, monospace" font-size="8.5" font-weight="600">N2O PULSE</text>
+                <text x="6" y="36" fill="#686763" font-family="JetBrains Mono, monospace" font-size="8">CO2 BASE</text>
+              </svg>
+            </div>
+            <p class="mag-desc">Subsurface nitrous oxide spikes following over-fertilization are the largest greenhouse gas source in crop production.</p>
+          </div>
+
+          <!-- Bottleneck Card 3: 3 to 7 Days Latency (Both bars reach 100% — Leaching finishes first!) -->
+          <div class="mag-card reveal-card">
+            <div>
+              <div class="mag-top-row">
+                <div class="mag-val">3 to 7 Days</div>
+                <span class="mag-chip">Too Late</span>
+              </div>
+              <div class="mag-lbl">Lab Extraction Lag</div>
+            </div>
+            <div class="mag-viz" aria-hidden="true">
+              <div style="display:flex; flex-direction:column; gap:7px; width:100%;">
+                <div>
+                  <div style="display:flex; justify-content:space-between; font-family:var(--font-mono); font-size:8.5px; color:#15803d; font-weight:600; margin-bottom:2px;">
+                    <span>ROOT-ZONE FLUSH</span><span>~4 HRS (100%)</span>
+                  </div>
+                  <div style="width:100%; height:7px; background:rgba(20,20,19,0.08); border-radius:4px; overflow:hidden;">
+                    <div style="height:100%; background:#15803d; border-radius:4px; animation: raceLeach100 4.2s infinite ease-out;"></div>
+                  </div>
+                </div>
+                <div>
+                  <div style="display:flex; justify-content:space-between; font-family:var(--font-mono); font-size:8.5px; color:#c85a17; font-weight:600; margin-bottom:2px;">
+                    <span>LAB KCl EXTRACT</span><span>5 DAYS (100%)</span>
+                  </div>
+                  <div style="width:100%; height:7px; background:rgba(20,20,19,0.08); border-radius:4px; overflow:hidden;">
+                    <div style="height:100%; background:#c85a17; border-radius:4px; animation: raceLab100 4.2s infinite linear;"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <p class="mag-desc">Manual soil coring and KCl wet-chemistry extraction are too slow and expensive to control daily irrigation valves.</p>
+          </div>
+
+          <!-- Bottleneck Card 4: ~4% / mV Nernstian Reference Drift (RT/F = 25.7 mV -> 3.9%/mV) -->
+          <div class="mag-card reveal-card">
+            <div>
+              <div class="mag-top-row">
+                <div class="mag-val">~4% / mV</div>
+                <span class="mag-chip">Nernst Drift</span>
+              </div>
+              <div class="mag-lbl">ISE Calibration Drift</div>
+            </div>
+            <div class="mag-viz" aria-hidden="true">
+              <svg viewBox="0 0 220 54">
+                <line x1="4" y1="36" x2="214" y2="36" stroke="#15803d" stroke-width="2" />
+                <path d="M 4 36 C 55 36, 95 31, 145 20 C 175 13, 198 8, 214 5" fill="none" stroke="rgba(220,38,38,0.25)" stroke-width="1.6" stroke-dasharray="4 3" />
+                <path pathLength="100" d="M 4 36 C 55 36, 95 31, 145 20 C 175 13, 198 8, 214 5" fill="none" stroke="#dc2626" stroke-width="2" stroke-dasharray="100" style="animation: sweepTrace 3.8s infinite ease-out;" />
+                <line x1="208" y1="7" x2="208" y2="35" stroke="#dc2626" stroke-width="1.2" style="animation: endAppear 3.8s infinite ease-out;" />
+                <text x="6" y="48" fill="#15803d" font-family="JetBrains Mono, monospace" font-size="8" font-weight="600">TRUE NO3-N</text>
+                <text x="78" y="13" fill="#dc2626" font-family="JetBrains Mono, monospace" font-size="8" font-weight="600">PVC-ISE DRIFT</text>
+              </svg>
+            </div>
+            <p class="mag-desc">Potentiometric membrane probes lose accuracy rapidly underground as biofilms and organic acids alter reference potentials.</p>
+          </div>
+        </div>
+
+        <!-- PART B: ASYMMETRIC BENTO APPLICATION GRID WITH LIVE TELEMETRY PREVIEWS -->
+        <div class="sc-header">
+          <div class="sc-eyebrow">Field &amp; Industrial Applications</div>
+          <h2 class="sc-title">Where continuous root-zone telemetry is used.</h2>
+          <p class="sc-lead">
+            Replacing fragile polymer membranes and wet reagents with a sealed inorganic probe opens up continuous monitoring across irrigation control, field trials, autonomous machinery, and catchment protection.
+          </p>
+        </div>
+
+        <div class="usecase-grid">
+          <!-- BENTO 01 (SPAN 7): CLOSED-LOOP FERTIGATION -->
+          <div class="uc-card uc-span-7 reveal-card">
+            <div>
+              <span class="uc-pill">01 &bull; Closed-Loop Fertigation &amp; High-Value Crops</span>
+              <div class="uc-split">
+                <div>
+                  <h3 class="uc-title">Automated drip and greenhouse nutrient dosing</h3>
+                  <p class="uc-body">
+                    Standard electrical conductivity (EC) probes cannot tell nitrate (NO<sub>3</sub><sup>&minus;</sup>) apart from accumulated chloride (Cl<sup>&minus;</sup>) or sulfate salts. Separating true nitrate from background salinity lets irrigation controllers dose only when the crop actually needs nitrogen.
+                  </p>
+                </div>
+                <div class="uc-telemetry-box" aria-hidden="true">
+                  <div class="uct-head">
+                    <span>Root-Zone Dosing Loop</span>
+                    <span class="uct-live-dot">Selective Read</span>
+                  </div>
+                  <svg class="uct-svg" viewBox="0 0 240 66">
+                    <line x1="0" y1="54" x2="240" y2="54" stroke="rgba(20,20,19,0.10)" stroke-width="1" />
+                    <path d="M 4 24 C 50 22, 105 16, 155 13 C 190 11, 215 10, 236 9" fill="none" stroke="#c85a17" stroke-width="1.6" stroke-dasharray="4 3" />
+                    <path d="M 4 28 C 42 30, 82 44, 122 45 C 148 45, 168 20, 200 21 C 218 21, 228 23, 236 24" fill="rgba(21,128,61,0.09)" />
+                    <path d="M 4 28 C 42 30, 82 44, 122 45 C 148 45, 168 20, 200 21 C 218 21, 228 23, 236 24" fill="none" stroke="rgba(21,128,61,0.28)" stroke-width="1.8" />
+                    <path pathLength="100" d="M 4 28 C 42 30, 82 44, 122 45 C 148 45, 168 20, 200 21 C 218 21, 228 23, 236 24" fill="none" stroke="#15803d" stroke-width="2.2" stroke-dasharray="100" style="animation: sweepTrace 4.2s infinite ease-out;" />
+                    <circle cx="236" cy="24" r="3.2" fill="#15803d" style="animation: endAppear 4.2s infinite ease-out;" />
+                    <text x="6" y="13" fill="#c85a17" font-family="JetBrains Mono, monospace" font-size="8" font-weight="600">BULK EC (Cl- + SO4 ACCUMULATION)</text>
+                    <text x="6" y="51" fill="#15803d" font-family="JetBrains Mono, monospace" font-size="8" font-weight="600">TRUE NO3-N (DEPLETION &amp; DOSE)</text>
+                  </svg>
+                  <div class="uct-metrics-row">
+                    <span>NO<sub>3</sub>-N: <strong>42.0 mg/L</strong></span>
+                    <span>EC<sub>pw</sub>: <strong>1.8 dS/m</strong></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="uc-footer-row">
+              <div class="uc-benefit">Cuts fertilizer waste &bull; Prevents salt-induced yield loss</div>
+              <span class="uc-bus-tag">SDI-12 / Modbus RTU</span>
+            </div>
+          </div>
+
+          <!-- BENTO 02 (SPAN 5): AGROCHEMICAL R&D & SCOPE 3 -->
+          <div class="uc-card uc-span-5 reveal-card">
+            <div>
+              <span class="uc-pill">02 &bull; Agrochemical R&amp;D &amp; Scope 3 Auditing</span>
+              <h3 class="uc-title">Fertilizer trials and verifiable N<sub>2</sub>O accounting</h3>
+              <p class="uc-body">
+                Fertilizer producers, nitrification-inhibitor developers, and food supply chains need physical root-zone measurements across field trials to prove nitrogen-use efficiency and verify Scope 3 emissions reductions without relying on satellite proxies.
+              </p>
+            </div>
+            <div class="uc-telemetry-box" aria-hidden="true">
+              <div class="uct-head">
+                <span>Split-Plot Leaching Trial (90 d)</span>
+                <span class="uct-live-dot">In-Situ Log</span>
+              </div>
+              <svg class="uct-svg" viewBox="0 0 240 58">
+                <line x1="4" y1="50" x2="236" y2="50" stroke="rgba(20,20,19,0.10)" stroke-width="1" />
+                <path d="M 6 48 C 48 46, 75 8, 112 8 C 148 8, 185 38, 234 44" fill="rgba(200,90,23,0.10)" stroke="#c85a17" stroke-width="1.6" stroke-dasharray="3 3" />
+                <path d="M 6 48 C 52 47, 88 28, 132 27 C 175 26, 205 32, 234 34" fill="rgba(21,128,61,0.10)" stroke="rgba(21,128,61,0.28)" stroke-width="1.8" />
+                <path pathLength="100" d="M 6 48 C 52 47, 88 28, 132 27 C 175 26, 205 32, 234 34" fill="none" stroke="#15803d" stroke-width="2.2" stroke-dasharray="100" style="animation: sweepTrace 4.2s infinite ease-out;" />
+                <text x="116" y="14" fill="#c85a17" font-family="JetBrains Mono, monospace" font-size="8" font-weight="600">UNTREATED CONTROL</text>
+                <text x="128" y="45" fill="#15803d" font-family="JetBrains Mono, monospace" font-size="8" font-weight="600">INHIBITOR TRIAL</text>
+              </svg>
+            </div>
+            <div class="uc-footer-row">
+              <div class="uc-benefit">Continuous root-zone NO<sub>3</sub>-N + moisture time-series</div>
+            </div>
+          </div>
+
+          <!-- BENTO 03 (SPAN 5): AGRICULTURAL ROBOTICS -->
+          <div class="uc-card uc-span-5 reveal-card">
+            <div>
+              <span class="uc-pill">03 &bull; Agricultural Robotics &amp; Smart Implements</span>
+              <h3 class="uc-title">Sensor payloads for rovers and precision machinery</h3>
+              <p class="uc-body">
+                Autonomous scouting rovers, spot-dosing machines, and tractor implements lack a solid-state chemical sensor with a hard mineral face that can survive repeated soil insertion or seasonal deployment without tearing a polymer membrane.
+              </p>
+            </div>
+            <div class="uc-telemetry-box" aria-hidden="true">
+              <div class="uct-head">
+                <span>Implement Telemetry Stream</span>
+                <span class="uct-live-dot">Hard Mineral Face</span>
+              </div>
+              <svg class="uct-svg" style="height:44px;" viewBox="0 0 240 42">
+                <rect x="4" y="9" width="64" height="24" rx="5" fill="#ffffff" stroke="rgba(20,20,19,0.15)" />
+                <text x="36" y="24" text-anchor="middle" fill="#141413" font-family="JetBrains Mono, monospace" font-size="8.5" font-weight="700">TERRA M1</text>
+                <line x1="70" y1="21" x2="156" y2="21" stroke="#15803d" stroke-width="2" stroke-dasharray="6 6" style="animation: packetFlow 1.2s infinite linear;" />
+                <rect x="158" y="9" width="78" height="24" rx="5" fill="#ffffff" stroke="rgba(20,20,19,0.15)" />
+                <text x="197" y="24" text-anchor="middle" fill="#15803d" font-family="JetBrains Mono, monospace" font-size="8" font-weight="700">ROVER ECU</text>
+              </svg>
+              <div class="uct-metrics-row">
+                <span>Wet Path: <strong>Zero Polymer</strong></span>
+                <span>Profile: <strong>4.2 mm Blade</strong></span>
+              </div>
+            </div>
+            <div class="uc-footer-row">
+              <div class="uc-benefit">Abrasion-resistant mineral face &bull; Standard digital bus</div>
+            </div>
+          </div>
+
+          <!-- BENTO 04 (SPAN 7): WATER UTILITIES & CATCHMENTS -->
+          <div class="uc-card uc-span-7 reveal-card">
+            <div>
+              <span class="uc-pill">04 &bull; Water Utilities &amp; Catchment Compliance</span>
+              <div class="uc-split">
+                <div>
+                  <h3 class="uc-title">Drinking-water protection and EU Nitrates Directive</h3>
+                  <p class="uc-body">
+                    Municipal waterworks (<em>Stadtwerke</em>) and environmental agencies need continuous vadose-zone leaching data across Nitrate Vulnerable Zones (91/676/EEC and EU 2020/2184) without installing €10,000+ surface vacuum-pump lysimeter stations.
+                  </p>
+                </div>
+                <div class="uc-telemetry-box" aria-hidden="true">
+                  <div class="uct-head">
+                    <span>Vadose Leaching Profile (NO<sub>3</sub><sup>&minus;</sup>)</span>
+                    <span class="uct-live-dot">EU 50 mg/L Limit</span>
+                  </div>
+                  <div style="position:relative; display:flex; flex-direction:column; gap:8px; font-family:var(--font-mono); font-size:9.5px; padding: 4px 0;">
+                    <div style="display:flex; align-items:center; gap:8px;">
+                      <span style="width:46px; color:#686763;">-30 cm</span>
+                      <div style="flex:1; height:7px; background:rgba(20,20,19,0.08); border-radius:4px; position:relative;">
+                        <div style="width:76%; height:100%; background:#c85a17; border-radius:4px;"></div>
+                      </div>
+                      <strong style="width:68px; text-align:right;">38 mg/L NO<sub>3</sub><sup>&minus;</sup></strong>
+                    </div>
+                    <div style="display:flex; align-items:center; gap:8px;">
+                      <span style="width:46px; color:#686763;">-60 cm</span>
+                      <div style="flex:1; height:7px; background:rgba(20,20,19,0.08); border-radius:4px; position:relative;">
+                        <div style="width:48%; height:100%; background:#0284c7; border-radius:4px;"></div>
+                      </div>
+                      <strong style="width:68px; text-align:right;">24 mg/L NO<sub>3</sub><sup>&minus;</sup></strong>
+                    </div>
+                    <div style="display:flex; align-items:center; gap:8px;">
+                      <span style="width:46px; color:#686763;">-120 cm</span>
+                      <div style="flex:1; height:7px; background:rgba(20,20,19,0.08); border-radius:4px; position:relative;">
+                        <div style="width:22%; height:100%; background:#15803d; border-radius:4px; animation: barPulse 2.2s infinite;"></div>
+                      </div>
+                      <strong style="width:68px; text-align:right;">11 mg/L NO<sub>3</sub><sup>&minus;</sup></strong>
+                    </div>
+                  </div>
+                  <div class="uct-metrics-row">
+                    <span>Statutory Threshold: <strong>50 mg/L NO<sub>3</sub><sup>&minus;</sup> (11.3 mg/L NO<sub>3</sub>-N)</strong></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="uc-footer-row">
+              <div class="uc-benefit">No surface pumps &bull; No liquid reagents &bull; Low-power standby</div>
+              <span class="uc-bus-tag">Zero Surface Cabinet</span>
+            </div>
+          </div>
+
+          <!-- BENTO 05 (SPAN 6): AGRONOMIC AI & DIGITAL TWINS -->
+          <div class="uc-card uc-span-6 reveal-card">
+            <div>
+              <span class="uc-pill">05 &bull; Agronomic AI &amp; Subsurface Digital Twins</span>
+              <h3 class="uc-title">Subsurface calibration data for crop models</h3>
+              <p class="uc-body">
+                Satellites and drones only observe the top millimeter of the leaf canopy. Mechanistic crop simulators (such as DSSAT and APSIM) and agronomic models need continuous underground chemical flux data to close the nitrogen mass balance.
+              </p>
+            </div>
+            <div class="uc-telemetry-box" aria-hidden="true">
+              <div class="uct-head">
+                <span>Subsurface State Vector (DSSAT / APSIM Input)</span>
+                <span class="uct-live-dot">3-Channel Sync</span>
+              </div>
+              <div class="uct-metrics-row" style="border-top:none; padding-top:2px;">
+                <span>1. <strong>NO<sub>3</sub>-N</strong> (mg/L)</span>
+                <span>2. <strong>EC<sub>pw</sub></strong> (dS/m)</span>
+                <span>3. <strong>&theta;<sub>v</sub></strong> (m<sup>3</sup>/m<sup>3</sup>)</span>
+                <span>4. <strong>T<sub>soil</sub></strong> (&deg;C)</span>
+              </div>
+            </div>
+            <div class="uc-footer-row">
+              <div class="uc-benefit">Simultaneous pore-water nitrate, salinity &amp; moisture</div>
+            </div>
+          </div>
+
+          <!-- BENTO 06 (SPAN 6): CIVIL INFRASTRUCTURE & REMEDIATION -->
+          <div class="uc-card uc-span-6 reveal-card">
+            <div>
+              <span class="uc-pill">06 &bull; Civil Infrastructure &amp; Remediation</span>
+              <h3 class="uc-title">Watershed runoff, tailings, and regulated turf</h3>
+              <p class="uc-body">
+                Long-term underground plume monitoring for civil drainage corridors, mine-tailing remediation sites, and regulated stadium or golf root zones without manual water sampling.
+              </p>
+            </div>
+            <div class="uc-telemetry-box" aria-hidden="true">
+              <div class="uct-head">
+                <span>Zero-Hysteresis Washout Recovery</span>
+                <span class="uct-live-dot">0.0% Memory Error</span>
+              </div>
+              <div class="uct-metrics-row" style="border-top:none; padding-top:2px;">
+                <span>Wet Path: <strong>100% Inorganic</strong></span>
+                <span>Sorbent Memory: <strong>0.0%</strong></span>
+                <span>Ref. Gel: <strong>None</strong></span>
+              </div>
+            </div>
+            <div class="uc-footer-row">
+              <div class="uc-benefit">All-inorganic wet path &bull; No reference-electrode drift</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- PART C: COMPARISON TABLE -->
+        <div class="sc-header" id="sec-benchmark">
+          <div class="sc-eyebrow">Soil Nitrogen Sensor Comparison</div>
+          <h2 class="sc-title">How Terra M1 compares with existing soil nitrogen sensors.</h2>
+          <p class="sc-lead">
+            Current soil nitrogen monitoring tools force a trade-off between short-lived buried polymer membranes, manual walk-and-push spot checks, or expensive surface-pumped analyzer cabinets.
+          </p>
+        </div>
+
+        <div class="spec-rows" role="table" aria-label="Comparison of In-Situ Soil Nitrogen Sensor Technologies">
+          <div class="spec-row header-row" role="row">
+            <div role="columnheader">Sensor Method</div>
+            <div role="columnheader">Operating Principle</div>
+            <div role="columnheader">Buried Field Behavior</div>
+            <div role="columnheader">Selectivity in Soil</div>
+          </div>
+          <div class="spec-row" role="row">
+            <div class="sr-col-title" role="cell">Terra M1 (in R&amp;D)</div>
+            <div class="sr-col-terra" role="cell" data-label="Operating Principle">Reagent-free solid-state transduction + conductometry</div>
+            <div class="sr-col-terra" role="cell" data-label="Buried Field Behavior">Multi-season target (all-inorganic, 0.0% hysteresis)</div>
+            <div class="sr-col-terra" role="cell" data-label="Selectivity in Soil">Direct NO<sub>3</sub>-N readout (unaffected by Cl<sup>&minus;</sup> / SO<sub>4</sub><sup>2&minus;</sup>)</div>
+          </div>
+          <div class="spec-row" role="row">
+            <div class="sr-col-title" role="cell">Polymer ISE probes</div>
+            <div class="sr-col-legacy" role="cell" data-label="Operating Principle">Plasticized PVC + organic ionophore + Ag/AgCl gel</div>
+            <div class="sr-col-legacy" role="cell" data-label="Buried Field Behavior">Drifts in 3 to 6 weeks (biofouling &amp; gel depletion)</div>
+            <div class="sr-col-legacy" role="cell" data-label="Selectivity in Soil">&gt;20% error (1 mV reference shift = ~4% error)</div>
+          </div>
+          <div class="spec-row" role="row">
+            <div class="sr-col-title" role="cell">Mineral ion-exchangers</div>
+            <div class="sr-col-legacy" role="cell" data-label="Operating Principle">Zeolite / layered double hydroxide sorbent films</div>
+            <div class="sr-col-legacy" role="cell" data-label="Buried Field Behavior">Retains trapped ions during rain washout (hysteresis)</div>
+            <div class="sr-col-legacy" role="cell" data-label="Selectivity in Soil">Cross-sensitivity to soil sulfate &amp; bicarbonate</div>
+          </div>
+          <div class="spec-row" role="row">
+            <div class="sr-col-title" role="cell">Pumped lysimeter stations</div>
+            <div class="sr-col-legacy" role="cell" data-label="Operating Principle">Buried porous cup + surface vacuum pump &amp; cabinet</div>
+            <div class="sr-col-legacy" role="cell" data-label="Buried Field Behavior">Requires surface tubing, solenoids &amp; mains/solar power</div>
+            <div class="sr-col-legacy" role="cell" data-label="Selectivity in Soil">High accuracy, but &gt;&euro;10,000 station footprint</div>
+          </div>
+          <div class="spec-row" role="row">
+            <div class="sr-col-title" role="cell">Handheld push-in probes</div>
+            <div class="sr-col-legacy" role="cell" data-label="Operating Principle">Bulk contact reflectance + empirical ML models</div>
+            <div class="sr-col-legacy" role="cell" data-label="Buried Field Behavior">Manual spot check only (cannot stay buried)</div>
+            <div class="sr-col-legacy" role="cell" data-label="Selectivity in Soil">Requires per-region soil-texture recalibration</div>
+          </div>
+        </div>
+
+        <!-- PART C2: TECHNICAL FAQ FOR SOIL NITROGEN SENSING (SEO & RESEARCHER Q&A) -->
+        <div class="faq-section">
+          <div class="sc-header" style="margin-bottom: 34px;">
+            <div class="sc-eyebrow">Technical FAQ</div>
+            <h2 class="sc-title" style="font-size: clamp(24px, 3.2vw, 36px);">Common questions on in-situ soil nitrogen sensing.</h2>
+          </div>
+          <div class="faq-list">
+            <details class="faq-item" open>
+              <summary><span>Why measure nitrate (NO<sub>3</sub>-N) in pore water to track soil nitrogen?</span></summary>
+              <p class="faq-body">
+                In aerated agricultural soils, ammonium (NH<sub>4</sub><sup>+</sup>) is rapidly oxidized into nitrate (NO<sub>3</sub><sup>&minus;</sup>) by soil nitrifying bacteria. Dissolved nitrate in pore water therefore accounts for 80% to 95% of mobile plant-available nitrogen and nearly 100% of the nitrogen lost to groundwater leaching and denitrification.
+              </p>
+            </details>
+            <details class="faq-item" open>
+              <summary><span>Why do conventional buried soil nitrogen sensors drift after a few weeks?</span></summary>
+              <p class="faq-body">
+                Conventional ion-selective electrodes (ISEs) use soft plasticized PVC membranes and Ag/AgCl reference gels. Underground, root exudates and biofilms foul the membrane while reference potentials drift (1 mV shift causes ~4% concentration error). Solid-state mineral sorbents avoid soft gels but suffer from desorption hysteresis during rain washout.
+              </p>
+            </details>
+            <details class="faq-item">
+              <summary><span>How does a selective soil nitrogen sensor differ from a standard soil EC probe?</span></summary>
+              <p class="faq-body">
+                Standard electrical conductivity (EC) probes measure total dissolved ions and cannot separate nutrient nitrate (NO<sub>3</sub><sup>&minus;</sup>) from background chloride (Cl<sup>&minus;</sup>), sulfate (SO<sub>4</sub><sup>2&minus;</sup>), or sodium salts. Terra M1 measures nitrate selectively alongside pore-water EC and bulk moisture so controllers do not confuse salt buildup with available nitrogen.
+              </p>
+            </details>
+            <details class="faq-item">
+              <summary><span>Can Terra M1 integrate with standard field loggers and agricultural robots?</span></summary>
+              <p class="faq-body">
+                Yes. Terra M1 is designed as a low-power 4.2 mm blade with an abrasion-resistant mineral face that streams calibrated nitrate (mg/L NO<sub>3</sub>-N), pore-water conductivity (dS/m), volumetric moisture, and temperature over standard SDI-12, RS-485 Modbus RTU, and digital UART interfaces.
+              </p>
+            </details>
+          </div>
+        </div>
+
+        <!-- PART D: IP-SAFE DESIGN CONSTRAINTS & WAITLIST -->
+        <div class="waitlist-grid">
+          <div class="thesis-card">
+            <div class="sc-eyebrow" style="text-align:left;">Hardware Design Constraints</div>
+            <h3 style="font-size: 25px; margin-bottom: 8px;">Built for long-term burial.</h3>
+            <p style="font-size: 14px; color: var(--color-ink-muted); line-height: 1.55;">
+              Terra M1 is currently in pre-commercial hardware development in Munich. To survive months of continuous root-zone burial, the probe is designed around four practical constraints:
+            </p>
+
+            <div class="thesis-list">
+              <div class="thesis-item">
+                <strong>1. All-inorganic soil interface</strong>
+                <span>Eliminates plasticized PVC membranes, organic ionophores, and wet reference gels in the soil path. Only inert mineral and metallic surfaces contact the soil.</span>
+              </div>
+              <div class="thesis-item">
+                <strong>2. Zero sorption memory during washout</strong>
+                <span>Measures dissolved species without chemically binding them into a solid sorbent matrix, so the probe tracks both rising fertilizer pulses and rain leaching without hysteresis.</span>
+              </div>
+              <div class="thesis-item">
+                <strong>3. On-board matrix and temperature compensation</strong>
+                <span>Embedded signal processing accounts for dissolved organic background and soil temperature shifts directly inside the probe head, requiring no liquid reagents.</span>
+              </div>
+              <div class="thesis-item">
+                <strong>4. Three measurements in one blade</strong>
+                <span>Combines nitrate concentration (NO<sub>3</sub>-N), pore-water electrical conductivity (EC<sub>pw</sub>), and bulk volumetric moisture in a single low-power probe compatible with standard field loggers.</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="wl-card" id="sec-waitlist">
+            <div class="sc-eyebrow" style="text-align:left;">Pilot &amp; Research Updates</div>
+            <h3 style="font-size: 25px; margin-bottom: 8px;">Request project updates or pilot access.</h3>
+            <p style="font-size: 14px; color: var(--color-ink-muted); line-height: 1.55;">
+              We are currently moving Terra M1 from numerical physics modeling into prototype fabrication in Munich. Leave your details below if you would like to be notified when bench validation data and field pilot units become available.
+            </p>
+
+            <form id="wl-form" novalidate>
+              <!-- Honeypot field to block automated spam bots on GitHub Pages -->
+              <input type="text" name="_gotcha" id="f-gotcha" tabindex="-1" autocomplete="off" style="position:absolute; left:-9999px; opacity:0; height:0; width:0;" />
+              <div class="wl-form-grid">
+                <div class="wl-field">
+                  <label for="f-name">Full Name *</label>
+                  <input class="wl-input" id="f-name" type="text" maxlength="100" autocomplete="name" required placeholder="Dr. Lukas Steiner" />
+                  <span class="wl-field-err" id="err-name"></span>
+                </div>
+                <div class="wl-field">
+                  <label for="f-email">Work or Institutional Email *</label>
+                  <input class="wl-input" id="f-email" type="email" maxlength="160" autocomplete="email" required placeholder="steiner@organization.de" />
+                  <span class="wl-field-err" id="err-email"></span>
+                </div>
+                <div class="wl-field">
+                  <label for="f-org">Primary Sector *</label>
+                  <select class="wl-input" id="f-org">
+                    <option value="grower">Closed-Loop Fertigation / Commercial Crop Production</option>
+                    <option value="agchem">Fertilizer / Agrochemical R&amp;D &amp; Scope 3 Auditing</option>
+                    <option value="robotics">Ag-Robotics / Smart Implement OEM</option>
+                    <option value="utility">Water Utility / Catchment Compliance</option>
+                    <option value="ai">Agronomic Modeling / Soil Telemetry Platform</option>
+                    <option value="research">Research Institute / Venture Partner</option>
+                    <option value="other">Other (please specify)</option>
+                  </select>
+                  <input class="wl-input" id="f-org-other" type="text" maxlength="100" placeholder="Specify your sector (2–100 chars)..." style="display:none; margin-top:6px;" />
+                  <span class="wl-field-err" id="err-org"></span>
+                </div>
+                <div class="wl-field">
+                  <label for="f-interest">Area of Interest *</label>
+                  <select class="wl-input" id="f-interest">
+                    <option value="pilot">Future Field-Validation Pilot</option>
+                    <option value="oem">OEM / System Integration</option>
+                    <option value="partner">R&amp;D Grant or Venture Inquiry</option>
+                    <option value="launch">General Release Notification</option>
+                    <option value="other">Other (please specify)</option>
+                  </select>
+                  <input class="wl-input" id="f-interest-other" type="text" maxlength="100" placeholder="Specify your area of interest (2–100 chars)..." style="display:none; margin-top:6px;" />
+                  <span class="wl-field-err" id="err-interest"></span>
+                </div>
+                <div class="wl-field full">
+                  <label for="f-crop">Application Context or Note (Optional, max 500 chars)</label>
+                  <input class="wl-input" id="f-crop" type="text" maxlength="500" placeholder="e.g., Greenhouse drip fertigation, NVZ groundwater monitoring, rover payload..." />
+                  <span class="wl-field-err" id="err-crop"></span>
+                </div>
+                <div class="wl-field full" style="margin-top: 4px;">
+                  <button type="submit" class="btn btn-gold" id="f-btn" style="width: 100%; padding: 13px; font-size: 14px;">
+                    Request project updates &rarr;
+                  </button>
+                  <p class="wl-legal-note">
+                    Non-binding R&amp;D inquiry. Your contact information is used solely to share Terra M1 project milestones and is never shared with third parties. All performance figures shown on this page represent pre-commercial simulation targets.
+                  </p>
+                </div>
+              </div>
+              <div class="wl-status" id="f-status" role="status" aria-live="polite"></div>
+            </form>
+          </div>
+        </div>
+
+        <footer class="footer-bar">
+          <div><strong>Fieldnomic</strong> &bull; Terra M1 In-Situ Soil Sensing R&amp;D &bull; Munich, Germany &bull; fieldnomic.com</div>
+          <div>PRE-COMMERCIAL RESEARCH &bull; ALL-INORGANIC WET PATH &bull; NUMERICAL TARGET SPECS</div>
+        </footer>
+
+      </div>
+    </section>
+
+  </main>
+
+  <script>
+    // =========================================================================
+    // 1. 3D HARDWARE STAGE (SINGLE-MESH UNIBODY + PROUD COLLAR = ZERO Z-FIGHTING)
+    // =========================================================================
+    const threeCanvas = document.getElementById("three-canvas");
+    const calloutCanvas = document.getElementById("callout-canvas");
+    const ctx = calloutCanvas.getContext("2d");
+
+    const renderer = new THREE.WebGLRenderer({
+      canvas: threeCanvas,
+      antialias: true,
+      alpha: true,
+      powerPreference: "high-performance"
+    });
+    renderer.setPixelRatio(Math.min(window.devicePixelRatio || 1, 2));
+    renderer.toneMapping = THREE.ACESFilmicToneMapping;
+    renderer.toneMappingExposure = 1.12;
+
+    const scene = new THREE.Scene();
+    const camera = new THREE.PerspectiveCamera(20, window.innerWidth / window.innerHeight, 0.1, 250);
+
+    const pmremGenerator = new THREE.PMREMGenerator(renderer);
+    pmremGenerator.compileEquirectangularShader();
+    const envScene = new THREE.Scene();
+    envScene.background = new THREE.Color(0xf4f1ea);
+
+    const softboxTop = new THREE.Mesh(
+      new THREE.PlaneGeometry(40, 40),
+      new THREE.MeshBasicMaterial({ color: 0xffffff, side: THREE.DoubleSide })
+    );
+    softboxTop.position.set(0, 20, 10);
+    softboxTop.lookAt(0, 0, 0);
+    envScene.add(softboxTop);
+
+    const softboxRight = new THREE.Mesh(
+      new THREE.PlaneGeometry(30, 40),
+      new THREE.MeshBasicMaterial({ color: 0xffe8d1, side: THREE.DoubleSide })
+    );
+    softboxRight.position.set(22, 4, 12);
+    softboxRight.lookAt(0, 0, 0);
+    envScene.add(softboxRight);
+
+    const softboxLeft = new THREE.Mesh(
+      new THREE.PlaneGeometry(30, 40),
+      new THREE.MeshBasicMaterial({ color: 0xe0f2fe, side: THREE.DoubleSide })
+    );
+    softboxLeft.position.set(-22, -4, 12);
+    softboxLeft.lookAt(0, 0, 0);
+    envScene.add(softboxLeft);
+
+    const darkFloor = new THREE.Mesh(
+      new THREE.PlaneGeometry(50, 50),
+      new THREE.MeshBasicMaterial({ color: 0x27272a, side: THREE.DoubleSide })
+    );
+    darkFloor.position.set(0, -22, 0);
+    darkFloor.lookAt(0, 0, 0);
+    envScene.add(darkFloor);
+
+    scene.environment = pmremGenerator.fromScene(envScene, 0.04).texture;
+
+    scene.add(new THREE.AmbientLight(0xfffcf7, 0.58));
+    const keyLight = new THREE.DirectionalLight(0xffffff, 1.35);
+    keyLight.position.set(14, 22, 24);
+    scene.add(keyLight);
+
+    const fillLight = new THREE.DirectionalLight(0xffedd5, 0.68);
+    fillLight.position.set(-18, 6, 14);
+    scene.add(fillLight);
+
+    const rimLight = new THREE.DirectionalLight(0xbae6fd, 0.80);
+    rimLight.position.set(4, -18, -12);
+    scene.add(rimLight);
+
+    const matCADEdgeDark  = new THREE.LineBasicMaterial({ color: 0x141413, transparent: true, opacity: 0.22 });
+    const matCADEdgeLight = new THREE.LineBasicMaterial({ color: 0xd6d3cd, transparent: true, opacity: 0.24 });
+
+    function addWithPrecisionEdges(parentGrp, mesh, useLightEdge = false, thresholdDeg = 22) {
+      const edges = new THREE.EdgesGeometry(mesh.geometry, thresholdDeg);
+      const line = new THREE.LineSegments(edges, useLightEdge ? matCADEdgeLight : matCADEdgeDark);
+      mesh.add(line);
+      parentGrp.add(mesh);
+      return mesh;
+    }
+
+    function createRoundedRectAt(cx, cy, w, h, r) {
+      const shape = new THREE.Shape();
+      const hw = w * 0.5, hh = h * 0.5;
+      const cr = Math.min(r, hw * 0.85, hh * 0.85);
+      shape.moveTo(cx - hw + cr, cy - hh);
+      shape.lineTo(cx + hw - cr, cy - hh);
+      shape.absarc(cx + hw - cr, cy - hh + cr, cr, -Math.PI * 0.5, 0, false);
+      shape.lineTo(cx + hw, cy + hh - cr);
+      shape.absarc(cx + hw - cr, cy + hh - cr, cr, 0, Math.PI * 0.5, false);
+      shape.lineTo(cx - hw + cr, cy + hh);
+      shape.absarc(cx - hw + cr, cy + hh - cr, cr, Math.PI * 0.5, Math.PI, false);
+      shape.lineTo(cx - hw, cy - hh + cr);
+      shape.absarc(cx - hw + cr, cy - hh + cr, cr, Math.PI, Math.PI * 1.5, false);
+      return shape;
+    }
+
+    // Single continuous unibody profile from pointed tip (yTip = -7.0) to top crown (yTop = +5.82)
+    function createContinuousMonolithProfile(w, yTop, yHip, yTip, rTop) {
+      const shape = new THREE.Shape();
+      const hw = w * 0.5;
+      const cr = Math.min(rTop, hw);
+      const tipSpan = yHip - yTip;
+      shape.moveTo(-0.18, yTip);
+      shape.quadraticCurveTo(0, yTip - 0.12, 0.18, yTip);
+      shape.bezierCurveTo(hw * 0.52, yHip - tipSpan * 0.65, hw, yHip - tipSpan * 0.28, hw, yHip);
+      shape.lineTo(hw, yTop - cr);
+      shape.absarc(hw - cr, yTop - cr, cr, 0, Math.PI * 0.5, false);
+      shape.lineTo(-hw + cr, yTop);
+      shape.absarc(-hw + cr, yTop - cr, cr, Math.PI * 0.5, Math.PI, false);
+      shape.lineTo(-hw, yHip);
+      shape.bezierCurveTo(-hw, yHip - tipSpan * 0.28, -hw * 0.52, yHip - tipSpan * 0.65, -0.18, yTip);
+      return shape;
+    }
+
+    const matAnodizedChassis = new THREE.MeshStandardMaterial({
+      color: 0x1e2024,
+      metalness: 0.72,
+      roughness: 0.32
+    });
+
+    const matPocketFloor = new THREE.MeshStandardMaterial({
+      color: 0x15181c,
+      metalness: 0.62,
+      roughness: 0.38
+    });
+
+    const matInertCollar = new THREE.MeshStandardMaterial({
+      color: 0xd4d0c8,
+      metalness: 0.86,
+      roughness: 0.24
+    });
+
+    const matCeramicShield = new THREE.MeshPhysicalMaterial({
+      color: 0xfaf9f5,
+      roughness: 0.16,
+      metalness: 0.02,
+      clearcoat: 0.45,
+      clearcoatRoughness: 0.18
+    });
+
+    const matGoldTrace = new THREE.MeshStandardMaterial({
+      color: 0xdfb15b,
+      metalness: 0.92,
+      roughness: 0.18
+    });
+
+    const matSealedWindow = new THREE.MeshPhysicalMaterial({
+      color: 0x334155,
+      roughness: 0.12,
+      metalness: 0.35,
+      clearcoat: 0.9
+    });
+
+    const matBlackBoard = new THREE.MeshStandardMaterial({
+      color: 0x111827,
+      roughness: 0.38,
+      metalness: 0.48
+    });
+
+    const matCyanSeal = new THREE.MeshStandardMaterial({
+      color: 0x0284c7,
+      metalness: 0.75,
+      roughness: 0.22
+    });
+
+    const sensorRoot = new THREE.Group();
+    scene.add(sensorRoot);
+
+    const grpLayer1Chassis = new THREE.Group();
+    const grpLayer2Board   = new THREE.Group();
+    const grpLayer3Core    = new THREE.Group();
+    const grpLayer4Shield  = new THREE.Group();
+    const grpLayer5Frame   = new THREE.Group();
+
+    sensorRoot.add(grpLayer1Chassis, grpLayer2Board, grpLayer3Core, grpLayer4Shield, grpLayer5Frame);
+
+    const POCKET_Y = 2.45;
+    const POCKET_W = 2.10;
+    const POCKET_H = 2.96;
+    const UPPER_Y  = 3.16;
+    const LOWER_Y  = 1.74;
+    const BLADE_W  = 3.15;
+
+    // -------------------------------------------------------------------------
+    // LAYER 1: SINGLE-MESH CONTINUOUS MONOLITH (Y = -7.00 tip to +5.82 top crown)
+    //          Eliminates multi-part coplanar bevel overlap so zero Z-fighting can occur!
+    // -------------------------------------------------------------------------
+    const monolithShape = createContinuousMonolithProfile(BLADE_W, 5.82, -4.50, -7.00, 0.28);
+    const pocketHole = createRoundedRectAt(0, POCKET_Y, POCKET_W, POCKET_H, 0.28);
+    monolithShape.holes.push(new THREE.Path(pocketHole.getPoints(40)));
+
+    const monolithGeom = new THREE.ExtrudeGeometry(monolithShape, {
+      depth: 0.52,
+      bevelEnabled: true,
+      bevelSegments: 4,
+      steps: 1,
+      bevelSize: 0.06,
+      bevelThickness: 0.06,
+      curveSegments: 48
+    });
+    const meshMonolith = new THREE.Mesh(monolithGeom, matAnodizedChassis);
+    meshMonolith.position.set(0, 0, -0.26);
+    addWithPrecisionEdges(grpLayer1Chassis, meshMonolith, true, 24);
+
+    // Internal Blind Pocket Backplate (Strictly inside pocket footprint, Z = -0.26 to +0.01)
+    const floorShape = createRoundedRectAt(0, POCKET_Y, POCKET_W + 0.16, POCKET_H + 0.16, 0.30);
+    const floorGeom  = new THREE.ExtrudeGeometry(floorShape, { depth: 0.27, bevelEnabled: false });
+    const meshFloor  = new THREE.Mesh(floorGeom, matPocketFloor);
+    meshFloor.position.set(0, 0, -0.26);
+    grpLayer1Chassis.add(meshFloor);
+
+    // Recessed gold perimeter seat inside the pocket floor
+    const pocketRimShape = createRoundedRectAt(0, POCKET_Y, POCKET_W - 0.08, POCKET_H - 0.08, 0.24);
+    const pocketRimHole  = createRoundedRectAt(0, POCKET_Y, POCKET_W - 0.24, POCKET_H - 0.24, 0.18);
+    pocketRimShape.holes.push(new THREE.Path(pocketRimHole.getPoints(32)));
+    const pocketRimMesh = new THREE.Mesh(
+      new THREE.ExtrudeGeometry(pocketRimShape, { depth: 0.025, bevelEnabled: false }),
+      matGoldTrace
+    );
+    pocketRimMesh.position.set(0, 0, 0.01);
+    grpLayer1Chassis.add(pocketRimMesh);
+
+    // Proud Metallic Neck Collar Band (Strictly +0.025 proud outside the monolith surface -> 0% Z-fighting!)
+    const collarShape = createRoundedRectAt(0, 4.95, BLADE_W + 0.05, 0.28, 0.04);
+    const collarGeom = new THREE.ExtrudeGeometry(collarShape, {
+      depth: 0.56,
+      bevelEnabled: true,
+      bevelSegments: 3,
+      steps: 1,
+      bevelSize: 0.045,
+      bevelThickness: 0.045,
+      curveSegments: 24
+    });
+    const meshCollar = new THREE.Mesh(collarGeom, matInertCollar);
+    meshCollar.position.set(0, 0, -0.28);
+    addWithPrecisionEdges(grpLayer1Chassis, meshCollar, false, 25);
+
+    // Laser-Etched Depth Ticks on Left Bevel (Y = +0.2, -1.6, -3.4)
+    [0.2, -1.6, -3.4].forEach((ty) => {
+      const tick = new THREE.Mesh(new THREE.BoxGeometry(0.28, 0.045, 0.03), matInertCollar);
+      tick.position.set(-1.42, ty, 0.32);
+      grpLayer1Chassis.add(tick);
+    });
+
+    // 3 Coplanar Moisture Waveguide Tracks (Lower Blade: Y = -4.35 to +0.52)
+    [-0.78, 0.0, 0.78].forEach((tx, idx) => {
+      const yTopTrack = 0.52;
+      const yBotTrack = idx === 1 ? -4.35 : -3.90;
+      const tLen = yTopTrack - yBotTrack;
+      const tCy  = (yTopTrack + yBotTrack) * 0.5;
+      const tShape = createRoundedRectAt(tx, tCy, 0.34, tLen, 0.16);
+      const tGeom = new THREE.ExtrudeGeometry(tShape, {
+        depth: 0.04,
+        bevelEnabled: true,
+        bevelSegments: 3,
+        steps: 1,
+        bevelSize: 0.015,
+        bevelThickness: 0.015,
+        curveSegments: 24
+      });
+      const tMesh = new THREE.Mesh(tGeom, matGoldTrace);
+      tMesh.position.set(0, 0, 0.32);
+      addWithPrecisionEdges(grpLayer1Chassis, tMesh, false, 28);
+    });
+
+    // Center Status Indicator LED on Crown Face (Y = +5.46)
+    const ledWindow = new THREE.Mesh(
+      new THREE.BoxGeometry(0.32, 0.13, 0.05),
+      new THREE.MeshStandardMaterial({ color: 0x10b981, emissive: 0x059669, emissiveIntensity: 0.7 })
+    );
+    ledWindow.position.set(0, 5.46, 0.32);
+    grpLayer1Chassis.add(ledWindow);
+
+    // Left: Industrial Connector Port (X = -0.82, Y = +5.88..+6.26, Z = 0.0)
+    const connBarrel = new THREE.Mesh(new THREE.CylinderGeometry(0.26, 0.26, 0.38, 32), matInertCollar);
+    connBarrel.position.set(-0.82, 6.07, 0.0);
+    const connHexNut = new THREE.Mesh(new THREE.CylinderGeometry(0.32, 0.32, 0.14, 6), matInertCollar);
+    connHexNut.position.set(-0.82, 5.95, 0.0);
+    const connInsert = new THREE.Mesh(new THREE.CylinderGeometry(0.18, 0.18, 0.40, 24), matAnodizedChassis);
+    connInsert.position.set(-0.82, 6.08, 0.0);
+    addWithPrecisionEdges(grpLayer1Chassis, connBarrel, false, 30);
+    addWithPrecisionEdges(grpLayer1Chassis, connHexNut, false, 20);
+    grpLayer1Chassis.add(connInsert);
+
+    // Right: Sealed Service Cap + O-Ring (X = +0.82, Y = +5.88..+6.22, Z = 0.0)
+    const valveBody = new THREE.Mesh(new THREE.CylinderGeometry(0.24, 0.24, 0.34, 32), matInertCollar);
+    valveBody.position.set(0.82, 6.05, 0.0);
+    const valveGroove = new THREE.Mesh(new THREE.CylinderGeometry(0.26, 0.26, 0.08, 12), matInertCollar);
+    valveGroove.position.set(0.82, 6.17, 0.0);
+    const oRing = new THREE.Mesh(new THREE.TorusGeometry(0.25, 0.035, 16, 36), matCyanSeal);
+    oRing.rotation.x = Math.PI * 0.5;
+    oRing.position.set(0.82, 5.90, 0.0);
+    addWithPrecisionEdges(grpLayer1Chassis, valveBody, false, 30);
+    addWithPrecisionEdges(grpLayer1Chassis, valveGroove, false, 20);
+    grpLayer1Chassis.add(oRing);
+
+    // -------------------------------------------------------------------------
+    // LAYER 2: EMBEDDED SIGNAL-PROCESSING BOARD (IP-Safe Shielded ASICs)
+    // -------------------------------------------------------------------------
+    const boardShape = createRoundedRectAt(0, POCKET_Y, POCKET_W - 0.10, POCKET_H - 0.10, 0.24);
+    const boardGeom = new THREE.ExtrudeGeometry(boardShape, {
+      depth: 0.09,
+      bevelEnabled: true,
+      bevelSegments: 3,
+      steps: 1,
+      bevelSize: 0.02,
+      bevelThickness: 0.02,
+      curveSegments: 28
+    });
+    const meshBoard = new THREE.Mesh(boardGeom, matBlackBoard);
+    meshBoard.position.set(0, 0, -0.045);
+    addWithPrecisionEdges(grpLayer2Board, meshBoard, true, 25);
+
+    // Upper & Lower Shielded Guard Rings + Hermetic Can Packages (Reveals zero proprietary component layout)
+    [UPPER_Y, LOWER_Y].forEach((cy, idx) => {
+      const guard = new THREE.Mesh(new THREE.BoxGeometry(1.72, 1.10, 0.02), matGoldTrace);
+      guard.position.set(0, cy, 0.065);
+      const inner = new THREE.Mesh(new THREE.BoxGeometry(1.60, 0.98, 0.024), matBlackBoard);
+      inner.position.set(0, cy, 0.067);
+      grpLayer2Board.add(guard, inner);
+
+      if (idx === 0) {
+        const pkgL = new THREE.Mesh(new THREE.BoxGeometry(0.62, 0.74, 0.08), matInertCollar);
+        pkgL.position.set(-0.42, cy, 0.10);
+        const pkgR = new THREE.Mesh(new THREE.BoxGeometry(0.62, 0.74, 0.08), matInertCollar);
+        pkgR.position.set(0.42, cy, 0.10);
+        addWithPrecisionEdges(grpLayer2Board, pkgL, false, 20);
+        addWithPrecisionEdges(grpLayer2Board, pkgR, false, 20);
+      } else {
+        const icMain = new THREE.Mesh(new THREE.BoxGeometry(0.68, 0.68, 0.08), new THREE.MeshStandardMaterial({ color: 0x1e293b, roughness: 0.28, metalness: 0.5 }));
+        icMain.position.set(-0.36, cy, 0.10);
+        const icAux = new THREE.Mesh(new THREE.BoxGeometry(0.52, 0.52, 0.08), new THREE.MeshStandardMaterial({ color: 0x1e293b, roughness: 0.28, metalness: 0.5 }));
+        icAux.position.set(0.42, cy - 0.12, 0.10);
+        const icTemp = new THREE.Mesh(new THREE.BoxGeometry(0.32, 0.22, 0.07), matGoldTrace);
+        icTemp.position.set(0.42, cy + 0.28, 0.10);
+        addWithPrecisionEdges(grpLayer2Board, icMain, true, 20);
+        addWithPrecisionEdges(grpLayer2Board, icAux, true, 20);
+        addWithPrecisionEdges(grpLayer2Board, icTemp, false, 20);
+      }
+    });
+
+    // -------------------------------------------------------------------------
+    // LAYER 3: HERMETIC CHEMICAL TRANSDUCTION & CONDUCTIVITY CARTRIDGE (IP-Safe)
+    // -------------------------------------------------------------------------
+    const coreShape = createRoundedRectAt(0, POCKET_Y, POCKET_W - 0.08, POCKET_H - 0.08, 0.25);
+    const coreHole  = createRoundedRectAt(0, UPPER_Y, 1.56, 1.02, 0.14);
+    coreShape.holes.push(new THREE.Path(coreHole.getPoints(32)));
+
+    const coreGeom = new THREE.ExtrudeGeometry(coreShape, {
+      depth: 0.14,
+      bevelEnabled: true,
+      bevelSegments: 3,
+      steps: 1,
+      bevelSize: 0.025,
+      bevelThickness: 0.025,
+      curveSegments: 32
+    });
+    const meshCoreCarrier = new THREE.Mesh(coreGeom, matInertCollar);
+    meshCoreCarrier.position.set(0, 0, -0.07);
+    addWithPrecisionEdges(grpLayer3Core, meshCoreCarrier, false, 24);
+
+    // Sealed Solid-State Transduction Cell
+    const cellBlockL = new THREE.Mesh(new THREE.BoxGeometry(0.54, 0.88, 0.15), matSealedWindow);
+    cellBlockL.position.set(-0.46, UPPER_Y, 0.02);
+    addWithPrecisionEdges(grpLayer3Core, cellBlockL, true, 20);
+
+    const cellBlockR = new THREE.Mesh(new THREE.BoxGeometry(0.54, 0.88, 0.15), matSealedWindow);
+    cellBlockR.position.set(0.46, UPPER_Y, 0.02);
+    addWithPrecisionEdges(grpLayer3Core, cellBlockR, true, 20);
+
+    const cellCenter = new THREE.Mesh(new THREE.BoxGeometry(0.34, 0.88, 0.17), matAnodizedChassis);
+    cellCenter.position.set(0.0, UPPER_Y, 0.02);
+    addWithPrecisionEdges(grpLayer3Core, cellCenter, true, 20);
+
+    const cellTrim = new THREE.Mesh(new THREE.BoxGeometry(1.48, 0.10, 0.03), matGoldTrace);
+    cellTrim.position.set(0.0, UPPER_Y, 0.11);
+    grpLayer3Core.add(cellTrim);
+
+    // Lower Half: Pore-Water Conductivity Pad
+    const condPad = new THREE.Mesh(new THREE.BoxGeometry(1.60, 1.04, 0.14), matAnodizedChassis);
+    condPad.position.set(0.0, LOWER_Y, 0.06);
+    addWithPrecisionEdges(grpLayer3Core, condPad, true, 20);
+
+    for (let k = 0; k < 4; k++) {
+      const bar = new THREE.Mesh(new THREE.BoxGeometry(1.36, 0.115, 0.045), matGoldTrace);
+      bar.position.set(0.0, LOWER_Y - 0.30 + k * 0.20, 0.14);
+      addWithPrecisionEdges(grpLayer3Core, bar, false, 20);
+    }
+
+    // -------------------------------------------------------------------------
+    // LAYER 4: MINERAL-HARD PROTECTIVE SHIELD
+    // -------------------------------------------------------------------------
+    const shieldFullShape = createRoundedRectAt(0, POCKET_Y, POCKET_W - 0.08, POCKET_H - 0.08, 0.25);
+    const shieldLowerCut  = createRoundedRectAt(0, LOWER_Y, 1.62, 1.06, 0.15);
+    shieldFullShape.holes.push(new THREE.Path(shieldLowerCut.getPoints(32)));
+
+    const shieldGeom = new THREE.ExtrudeGeometry(shieldFullShape, {
+      depth: 0.09,
+      bevelEnabled: true,
+      bevelSegments: 4,
+      steps: 1,
+      bevelSize: 0.022,
+      bevelThickness: 0.022,
+      curveSegments: 36
+    });
+    const meshShield = new THREE.Mesh(shieldGeom, matCeramicShield);
+    meshShield.position.set(0, 0, -0.045);
+    addWithPrecisionEdges(grpLayer4Shield, meshShield, false, 24);
+
+    // -------------------------------------------------------------------------
+    // LAYER 5: DUAL-WINDOW METALLIC RETENTION FRAME
+    // -------------------------------------------------------------------------
+    const frameShape = createRoundedRectAt(0, POCKET_Y, POCKET_W + 0.24, POCKET_H + 0.24, 0.34);
+    const frameHoleTop = createRoundedRectAt(0, UPPER_Y, 1.62, 1.08, 0.16);
+    const frameHoleBot = createRoundedRectAt(0, LOWER_Y, 1.62, 1.08, 0.16);
+    frameShape.holes.push(new THREE.Path(frameHoleTop.getPoints(32)));
+    frameShape.holes.push(new THREE.Path(frameHoleBot.getPoints(32)));
+
+    const frameGeom = new THREE.ExtrudeGeometry(frameShape, {
+      depth: 0.11,
+      bevelEnabled: true,
+      bevelSegments: 4,
+      steps: 1,
+      bevelSize: 0.032,
+      bevelThickness: 0.032,
+      curveSegments: 36
+    });
+    const meshFrame = new THREE.Mesh(frameGeom, matInertCollar);
+    meshFrame.position.set(0, 0, -0.055);
+    addWithPrecisionEdges(grpLayer5Frame, meshFrame, false, 24);
+
+    // =========================================================================
+    // 2. SCROLL CHOREOGRAPHY & IP-SAFE MODULE CALLOUTS
+    // =========================================================================
+    const params = new URLSearchParams(window.location.search);
+    const forcedProgress = params.has("p") ? parseFloat(params.get("p")) : null;
+
+    let smoothStageP = forcedProgress !== null ? forcedProgress : 0.0;
+    let targetStageP = smoothStageP;
+    let dragYaw = 0.0, dragPitch = 0.0;
+    let isDragging = false, lx = 0, ly = 0;
+
+    calloutCanvas.addEventListener("mousedown", (e) => {
+      isDragging = true;
+      lx = e.clientX;
+      ly = e.clientY;
+    });
+    window.addEventListener("mousemove", (e) => {
+      if (!isDragging) return;
+      dragYaw += (e.clientX - lx) * 0.007;
+      dragPitch = Math.max(-0.4, Math.min(0.4, dragPitch + (e.clientY - ly) * 0.006));
+      lx = e.clientX;
+      ly = e.clientY;
+    });
+    window.addEventListener("mouseup", () => { isDragging = false; });
+
+    const STORY_CHAPTERS = [
+      {
+        eyebrow: "01 // FIELD FAILURE MODES",
+        title: "Why buried soil sensors lose calibration.",
+        body: "Standard ion-selective electrodes rely on plasticized polymer membranes and reference gels. Once buried in biologically active soil, they foul and drift within a few weeks. Mineral sorbents avoid soft gels but trap ions after a pulse, creating washout memory errors.",
+        stat: "0.0% Hysteresis",
+        lbl: "No soft polymers\nNo reference gels"
+      },
+      {
+        eyebrow: "02 // INORGANIC SOIL INTERFACE",
+        title: "Flush mineral-hard shield with zero moving parts.",
+        body: "Clamped by a screwless metallic retention frame, an inert mineral barrier keeps soil bacteria and clay particles out of the measurement zone while allowing dissolved ions to equilibrate passively without vacuum pumps.",
+        stat: "<15 Min Target",
+        lbl: "Passive equilibration\nNo surface cabinets"
+      },
+      {
+        eyebrow: "03 // REAGENT-FREE SELECTIVITY",
+        title: "Direct nitrate measurement without wet chemistry.",
+        body: "Instead of binding nitrate into a perishable membrane, our hermetically isolated transduction core measures dissolved nitrate directly and compensates for soil organic background on the probe.",
+        stat: "<1 mg/L Target",
+        lbl: "On-board background\n& temperature solver"
+      },
+      {
+        eyebrow: "04 // UNIFIED ROOT-ZONE TELEMETRY",
+        title: "Nitrate, salinity, and moisture in one blade.",
+        body: "Pairs reagent-free nitrate sensing with a pore-water conductivity array and an outer soil moisture waveguide, streaming calibrated data over standard agricultural and robotic field buses.",
+        stat: "Multi-season",
+        lbl: "Low-power sleep mode\nfor field loggers"
+      }
+    ];
+
+    let activeChapterIdx = -1;
+
+    function measureScrollState() {
+      if (forcedProgress !== null) {
+        return { sp: forcedProgress, inShowcase: forcedProgress > 0.88, inBenchmark: forcedProgress > 0.94 };
+      }
+      const usecaseEl = document.getElementById("sec-usecases");
+      const bmEl = document.getElementById("sec-benchmark");
+      const ucRect = usecaseEl.getBoundingClientRect();
+      const bmRect = bmEl.getBoundingClientRect();
+      const scrollySpan = Math.max(1, usecaseEl.offsetTop - window.innerHeight * 0.90);
+      const sp = Math.max(0, Math.min(1, window.scrollY / scrollySpan));
+
+      const inShowcase = ucRect.top < window.innerHeight * 0.95;
+      const inBenchmark = bmRect.top < window.innerHeight * 0.85;
+      return { sp, inShowcase, inBenchmark };
+    }
+
+    function updateStoryUI(sp, inShowcase, inBenchmark, isMobile) {
+      const storyCard = document.getElementById("story-card");
+      const cueEl = document.getElementById("scroll-cue");
+      const heroEl = document.getElementById("sec-intro");
+
+      const heroAlpha = Math.max(0, 1.0 - sp / 0.14);
+      heroEl.style.opacity = heroAlpha.toFixed(3);
+      heroEl.style.visibility = heroAlpha <= 0.01 ? "hidden" : "visible";
+      cueEl.style.opacity = (sp < 0.14 && !inShowcase) ? "1" : "0";
+
+      if (inShowcase) {
+        threeCanvas.style.opacity = "0.08";
+      } else if (isMobile && sp < 0.14) {
+        const mobAlpha = 0.16 + (sp / 0.14) * 0.84;
+        threeCanvas.style.opacity = mobAlpha.toFixed(3);
+      } else {
+        threeCanvas.style.opacity = "1";
+      }
+      calloutCanvas.style.opacity = inShowcase ? "0" : "1";
+
+      const navLinks = document.querySelectorAll(".nav-link");
+      let navBucket = 0;
+      if (inBenchmark) navBucket = 6;
+      else if (inShowcase) navBucket = 5;
+      else if (sp >= 0.55) navBucket = 2;
+      else if (sp >= 0.15) navBucket = 1;
+      navLinks.forEach((l) => l.classList.toggle("active", parseInt(l.dataset.sec) === navBucket));
+
+      if (sp >= 0.15 && !inShowcase) {
+        storyCard.style.transition = "";
+        storyCard.classList.add("visible");
+        let idx = 0;
+        if (sp >= 0.76) idx = 3;
+        else if (sp >= 0.55) idx = 2;
+        else if (sp >= 0.36) idx = 1;
+
+        if (idx !== activeChapterIdx) {
+          activeChapterIdx = idx;
+          const d = STORY_CHAPTERS[idx];
+          document.getElementById("sf-eyebrow").textContent = d.eyebrow;
+          document.getElementById("sf-title").textContent = d.title;
+          document.getElementById("sf-body").textContent = d.body;
+          document.getElementById("sf-stat").textContent = d.stat;
+          document.getElementById("sf-lbl").innerHTML = d.lbl.replace("\n", "<br/>");
+          for (let i = 0; i < 4; i++) {
+            document.getElementById("dot-" + i).classList.toggle("active", i <= idx);
+          }
+        }
+      } else {
+        if (inShowcase) storyCard.style.transition = "none";
+        storyCard.classList.remove("visible");
+        activeChapterIdx = -1;
+      }
+    }
+
+    function worldToScreen(localPt, W, H) {
+      const v = localPt.clone();
+      sensorRoot.localToWorld(v);
+      v.project(camera);
+      return [
+        (v.x * 0.5 + 0.5) * W,
+        (0.5 - v.y * 0.5) * H
+      ];
+    }
+
+    function drawPrecisionCalloutPills(items, W, H, alpha) {
+      if (W <= 820 || alpha <= 0.02) return;
+      ctx.save();
+      ctx.globalAlpha = alpha;
+      ctx.font = "600 11.5px 'JetBrains Mono', monospace";
+
+      const boxes = items.map((it) => {
+        const [px, py] = worldToScreen(it.pt, W, H);
+        const tw = ctx.measureText(it.label).width + 30;
+        const th = 27;
+        const halfW = tw * 0.5;
+        const lx = W - halfW - 26;
+        const ly = Math.max(92, Math.min(H - 68, py));
+        return { ...it, px, py, lx, ly, tw, th };
+      });
+
+      boxes.sort((a, b) => a.py - b.py);
+      for (let i = 0; i < boxes.length; i++) {
+        boxes[i].ly = Math.max(92, Math.min(H - 68, boxes[i].py));
+      }
+      for (let pass = 0; pass < 10; pass++) {
+        for (let i = 0; i < boxes.length - 1; i++) {
+          const a = boxes[i], b = boxes[i + 1];
+          const minGap = 36;
+          if (b.ly - a.ly < minGap) {
+            const push = (minGap - (b.ly - a.ly)) * 0.5;
+            a.ly = Math.max(88, a.ly - push);
+            b.ly = Math.min(H - 64, b.ly + push);
+          }
+        }
+      }
+
+      for (const b of boxes) {
+        const bx = b.lx - b.tw * 0.5, by = b.ly - b.th * 0.5;
+
+        ctx.strokeStyle = "rgba(20, 20, 19, 0.28)";
+        ctx.lineWidth = 1.2;
+        ctx.beginPath();
+        ctx.moveTo(b.px, b.py);
+        ctx.lineTo(bx - 12, b.ly);
+        ctx.lineTo(bx, b.ly);
+        ctx.stroke();
+
+        ctx.fillStyle = b.dotColor;
+        ctx.beginPath();
+        ctx.arc(b.px, b.py, 3.8, 0, Math.PI * 2);
+        ctx.fill();
+        ctx.strokeStyle = "#ffffff";
+        ctx.lineWidth = 1.4;
+        ctx.stroke();
+
+        ctx.fillStyle = "rgba(255, 255, 255, 0.94)";
+        ctx.strokeStyle = "rgba(20, 20, 19, 0.14)";
+        ctx.lineWidth = 1.0;
+        ctx.shadowColor = "rgba(20, 20, 19, 0.07)";
+        ctx.shadowBlur = 10;
+        ctx.shadowOffsetY = 3;
+        ctx.beginPath();
+        ctx.roundRect(bx, by, b.tw, b.th, 8);
+        ctx.fill();
+        ctx.shadowBlur = 0;
+        ctx.shadowOffsetY = 0;
+        ctx.stroke();
+
+        ctx.fillStyle = b.dotColor;
+        ctx.beginPath();
+        ctx.arc(bx + 12, b.ly, 3.2, 0, Math.PI * 2);
+        ctx.fill();
+
+        ctx.fillStyle = "#141413";
+        ctx.textAlign = "left";
+        ctx.textBaseline = "middle";
+        ctx.fillText(b.label, bx + 21, b.ly + 0.5);
+      }
+
+      ctx.restore();
+    }
+
+    let clock = 0;
+
+    function animate() {
+      clock += 0.016;
+      const state = measureScrollState();
+      targetStageP = state.sp;
+      if (forcedProgress !== null) {
+        smoothStageP = forcedProgress;
+      } else if (Math.abs(targetStageP - smoothStageP) > 0.22) {
+        smoothStageP = targetStageP;
+      } else {
+        smoothStageP += (targetStageP - smoothStageP) * 0.12;
+      }
+
+      const p = smoothStageP;
+      const W = window.innerWidth;
+      const H = window.innerHeight;
+      const isMobile = W <= 820;
+      const dpr = Math.min(window.devicePixelRatio || 1, 2);
+
+      updateStoryUI(p, state.inShowcase, state.inBenchmark, isMobile);
+
+      if (threeCanvas.width !== W * dpr || threeCanvas.height !== H * dpr) {
+        renderer.setSize(W, H, false);
+        calloutCanvas.width = W * dpr;
+        calloutCanvas.height = H * dpr;
+        camera.aspect = W / H;
+        camera.updateProjectionMatrix();
+      }
+
+      const cardActive = (p >= 0.15 && !state.inShowcase);
+
+      let E = 0.0;
+      if (p < 0.10) {
+        E = 0.0;
+      } else if (p < 0.25) {
+        E = (p - 0.10) / 0.15;
+      } else {
+        E = 1.0;
+      }
+
+      const heroBlend = Math.min(1, p / 0.15);
+      const shiftX = isMobile ? (0.55 * heroBlend) : (3.30 * (1 - heroBlend) + 1.35 * heroBlend);
+      const shiftY = (cardActive && isMobile) ? 0.90 : -0.32;
+      sensorRoot.position.set(shiftX, shiftY, 0);
+
+      const rotZ = -0.18 + E * 0.10;
+      const rotY = -0.28 - E * 0.42 + dragYaw + Math.sin(clock * 0.6) * 0.02;
+      const rotX = 0.06 * (1 - E) + dragPitch;
+      sensorRoot.rotation.set(rotX, rotY, rotZ);
+
+      grpLayer1Chassis.position.z = 0.00;
+      grpLayer2Board.position.z   = 0.04 + E * 0.92;
+      grpLayer3Core.position.z    = 0.08 + E * 2.12;
+      grpLayer4Shield.position.z  = 0.26 + E * 3.30;
+      grpLayer5Frame.position.z   = 0.30 + E * 4.45;
+
+      const customCamZ = params.has("z") ? parseFloat(params.get("z")) : null;
+      camera.position.set(0, 0, customCamZ || (isMobile ? 52.0 : 43.0));
+      camera.lookAt(0, 0, 0);
+
+      renderer.render(scene, camera);
+
+      ctx.save();
+      ctx.scale(dpr, dpr);
+      ctx.clearRect(0, 0, W, H);
+
+      if (!state.inShowcase && E > 0.08) {
+        const pillAlpha = Math.min(1, (E - 0.08) / 0.25);
+        const callouts = [
+          { pt: new THREE.Vector3(0.82, 5.98, grpLayer1Chassis.position.z),           label: "Field bus & service port",           dotColor: "#0284c7" },
+          { pt: new THREE.Vector3(0.00, POCKET_Y + 1.52, grpLayer5Frame.position.z),  label: "Flush metallic retention frame",     dotColor: "#c85a17" },
+          { pt: new THREE.Vector3(0.00, UPPER_Y + 0.15, grpLayer4Shield.position.z),  label: "Mineral-hard protective shield",     dotColor: "#686763" },
+          { pt: new THREE.Vector3(0.46, UPPER_Y, grpLayer3Core.position.z + 0.10),    label: "Hermetic transduction module",       dotColor: "#9333ea" },
+          { pt: new THREE.Vector3(0.45, LOWER_Y, grpLayer3Core.position.z + 0.14),    label: "Pore-water conductivity array",      dotColor: "#15803d" },
+          { pt: new THREE.Vector3(0.42, LOWER_Y - 0.45, grpLayer2Board.position.z + 0.10), label: "Embedded signal-processing board", dotColor: "#2563eb" },
+          { pt: new THREE.Vector3(0.78, -2.10, grpLayer1Chassis.position.z + 0.32),   label: "Bulk soil moisture waveguide",       dotColor: "#d97706" }
+        ];
+
+        drawPrecisionCalloutPills(callouts, W, H, pillAlpha);
+      }
+
+      ctx.restore();
+      requestAnimationFrame(animate);
+    }
+
+    requestAnimationFrame(animate);
+
+    // =========================================================================
+    // 3. SMOOTH IN-PAGE ANCHOR NAVIGATION & WAITLIST FORM HANDLER
+    // =========================================================================
+    const CHAPTER_SCROLL_FRACTIONS = [0.25, 0.44, 0.64, 0.82];
+    [0, 1, 2, 3].forEach((idx) => {
+      const dotEl = document.getElementById("dot-" + idx);
+      if (dotEl) {
+        dotEl.addEventListener("click", () => {
+          const usecaseEl = document.getElementById("sec-usecases");
+          const scrollySpan = Math.max(1, usecaseEl.offsetTop - window.innerHeight * 0.90);
+          window.scrollTo({ top: scrollySpan * CHAPTER_SCROLL_FRACTIONS[idx], behavior: "smooth" });
+        });
+      }
+    });
+
+    document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+      anchor.addEventListener("click", (e) => {
+        const hash = anchor.getAttribute("href");
+        if (!hash || hash === "#") return;
+        e.preventDefault();
+
+        const usecaseEl = document.getElementById("sec-usecases");
+        const scrollySpan = Math.max(1, usecaseEl.offsetTop - window.innerHeight * 0.90);
+
+        if (hash === "#sec-intro") {
+          window.scrollTo({ top: 0, behavior: "smooth" });
+        } else if (hash === "#sec-dissect") {
+          window.scrollTo({ top: scrollySpan * 0.25, behavior: "smooth" });
+        } else if (hash === "#sec-features") {
+          window.scrollTo({ top: scrollySpan * 0.64, behavior: "smooth" });
+        } else {
+          const targetEl = document.querySelector(hash);
+          if (targetEl) {
+            const topPos = targetEl.getBoundingClientRect().top + window.scrollY - 88;
+            window.scrollTo({ top: Math.max(0, topPos), behavior: "smooth" });
+
+            if (hash === "#sec-waitlist") {
+              const wlCard = document.querySelector(".wl-card");
+              const nameInput = document.getElementById("f-name");
+              if (wlCard) {
+                wlCard.classList.add("pulse-highlight");
+                setTimeout(() => wlCard.classList.remove("pulse-highlight"), 1800);
+              }
+              if (nameInput) {
+                setTimeout(() => nameInput.focus({ preventScroll: true }), 650);
+              }
+            }
+          }
+        }
+      });
+    });
+
+    // =========================================================================
+    // 4. SERVERLESS WAITLIST FORM HANDLER (GITHUB PAGES READY)
+    //    Supports:
+    //      A) Formspree / Formspark URL: "https://formspree.io/f/YOUR_ID"
+    //      B) Google Apps Script URL:    "https://script.google.com/macros/s/YOUR_ID/exec"
+    //      C) Web3Forms Access Key:      "YOUR-UUID-ACCESS-KEY"
+    // =========================================================================
+    const WAITLIST_ENDPOINT = "https://script.google.com/macros/s/AKfycbzICRCI0y7CY1JGkJpbvY7RCuLpgq2amBKPEByrIxeczJk2v51duP3gGIhFR7xekpdR/exec"; // <-- Paste your Formspree URL, Google Script URL, or Web3Forms key here
+
+    const wlForm = document.getElementById("wl-form");
+    const wlStatus = document.getElementById("f-status");
+    const wlBtn = document.getElementById("f-btn");
+    const nameInput = document.getElementById("f-name");
+    const emailInput = document.getElementById("f-email");
+    const orgSelect = document.getElementById("f-org");
+    const orgOtherInput = document.getElementById("f-org-other");
+    const interestSelect = document.getElementById("f-interest");
+    const interestOtherInput = document.getElementById("f-interest-other");
+    const cropInput = document.getElementById("f-crop");
+
+    const DISPOSABLE_DOMAINS = new Set([
+      "example.com", "test.com", "mailinator.com", "tempmail.com",
+      "10minutemail.com", "guerrillamail.com", "yopmail.com", "trashmail.com", "sharklasers.com"
+    ]);
+
+    let lastSubmitTime = 0;
+
+    function setFieldError(inputEl, errId, msg) {
+      const errEl = document.getElementById(errId);
+      if (msg) {
+        inputEl.classList.add("is-invalid");
+        inputEl.setAttribute("aria-invalid", "true");
+        if (errEl) {
+          errEl.textContent = msg;
+          errEl.classList.add("visible");
+        }
+        return false;
+      } else {
+        inputEl.classList.remove("is-invalid");
+        inputEl.removeAttribute("aria-invalid");
+        if (errEl) {
+          errEl.textContent = "";
+          errEl.classList.remove("visible");
+        }
+        return true;
+      }
+    }
+
+    // Prevent Google Sheets / CSV formula injection (=, +, -, @ at start of string)
+    function sanitizeForSheet(str) {
+      const cleaned = str.replace(/\s+/g, " ").trim();
+      if (/^[=+\-@]/.test(cleaned)) {
+        return "'" + cleaned;
+      }
+      return cleaned;
+    }
+
+    function validateName() {
+      const val = nameInput.value.trim();
+      if (!val) {
+        return setFieldError(nameInput, "err-name", "Please enter your full name.");
+      }
+      if (val.length < 2 || val.length > 100) {
+        return setFieldError(nameInput, "err-name", "Name must be between 2 and 100 characters.");
+      }
+      if (/https?:\/\/|www\./i.test(val)) {
+        return setFieldError(nameInput, "err-name", "URLs are not allowed in the name field.");
+      }
+      const letterCount = (val.match(/[A-Za-zÀ-ÖØ-öø-ÿĀ-ž]/g) || []).length;
+      if (letterCount < 2 || !/^[A-Za-zÀ-ÖØ-öø-ÿĀ-ž\s.'\-()]+$/.test(val)) {
+        return setFieldError(nameInput, "err-name", "Please enter a valid name (letters, spaces, hyphens, or periods).");
+      }
+      return setFieldError(nameInput, "err-name", "");
+    }
+
+    function validateEmail() {
+      const val = emailInput.value.trim().toLowerCase();
+      if (!val) {
+        return setFieldError(emailInput, "err-email", "Please enter your work or institutional email.");
+      }
+      if (val.length > 160) {
+        return setFieldError(emailInput, "err-email", "Email address is too long (max 160 characters).");
+      }
+      const emailRegex = /^[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,24}$/;
+      if (!emailRegex.test(val) || val.includes("..")) {
+        return setFieldError(emailInput, "err-email", "Please enter a valid email address (e.g., name@institution.de).");
+      }
+      const domain = val.split("@")[1];
+      if (!domain || domain.startsWith(".") || domain.startsWith("-") || domain.endsWith("-") || DISPOSABLE_DOMAINS.has(domain)) {
+        return setFieldError(emailInput, "err-email", "Please use a valid work, university, or personal email domain.");
+      }
+      return setFieldError(emailInput, "err-email", "");
+    }
+
+    function validateOrgOther() {
+      if (orgSelect.value !== "other") {
+        return setFieldError(orgOtherInput, "err-org", "");
+      }
+      const val = orgOtherInput.value.trim();
+      if (!val || val.length < 2) {
+        return setFieldError(orgOtherInput, "err-org", "Please specify your sector (at least 2 characters).");
+      }
+      if (val.length > 100) {
+        return setFieldError(orgOtherInput, "err-org", "Sector description cannot exceed 100 characters.");
+      }
+      if (/https?:\/\/|www\./i.test(val) || !/[A-Za-zÀ-ÖØ-öø-ÿĀ-ž]{2,}/.test(val)) {
+        return setFieldError(orgOtherInput, "err-org", "Please enter a valid sector description (no URLs).");
+      }
+      return setFieldError(orgOtherInput, "err-org", "");
+    }
+
+    function validateInterestOther() {
+      if (interestSelect.value !== "other") {
+        return setFieldError(interestOtherInput, "err-interest", "");
+      }
+      const val = interestOtherInput.value.trim();
+      if (!val || val.length < 2) {
+        return setFieldError(interestOtherInput, "err-interest", "Please specify your area of interest (at least 2 characters).");
+      }
+      if (val.length > 100) {
+        return setFieldError(interestOtherInput, "err-interest", "Interest description cannot exceed 100 characters.");
+      }
+      if (/https?:\/\/|www\./i.test(val) || !/[A-Za-zÀ-ÖØ-öø-ÿĀ-ž]{2,}/.test(val)) {
+        return setFieldError(interestOtherInput, "err-interest", "Please enter a valid interest description (no URLs).");
+      }
+      return setFieldError(interestOtherInput, "err-interest", "");
+    }
+
+    function validateCropNote() {
+      const val = cropInput.value.trim();
+      if (!val) {
+        return setFieldError(cropInput, "err-crop", "");
+      }
+      if (val.length > 500) {
+        return setFieldError(cropInput, "err-crop", "Note cannot exceed 500 characters.");
+      }
+      const urlMatches = val.match(/https?:\/\/|www\./gi) || [];
+      if (urlMatches.length > 1) {
+        return setFieldError(cropInput, "err-crop", "Please do not include multiple web links in the note field.");
+      }
+      return setFieldError(cropInput, "err-crop", "");
+    }
+
+    // Real-time clear on input & validate on blur
+    nameInput.addEventListener("blur", validateName);
+    nameInput.addEventListener("input", () => { if (nameInput.classList.contains("is-invalid")) validateName(); });
+
+    emailInput.addEventListener("blur", validateEmail);
+    emailInput.addEventListener("input", () => { if (emailInput.classList.contains("is-invalid")) validateEmail(); });
+
+    orgOtherInput.addEventListener("blur", validateOrgOther);
+    orgOtherInput.addEventListener("input", () => { if (orgOtherInput.classList.contains("is-invalid")) validateOrgOther(); });
+
+    interestOtherInput.addEventListener("blur", validateInterestOther);
+    interestOtherInput.addEventListener("input", () => { if (interestOtherInput.classList.contains("is-invalid")) validateInterestOther(); });
+
+    cropInput.addEventListener("blur", validateCropNote);
+    cropInput.addEventListener("input", () => { if (cropInput.classList.contains("is-invalid")) validateCropNote(); });
+
+    orgSelect.addEventListener("change", () => {
+      const isOther = orgSelect.value === "other";
+      orgOtherInput.style.display = isOther ? "block" : "none";
+      setFieldError(orgOtherInput, "err-org", "");
+      if (isOther) orgOtherInput.focus();
+    });
+
+    interestSelect.addEventListener("change", () => {
+      const isOther = interestSelect.value === "other";
+      interestOtherInput.style.display = isOther ? "block" : "none";
+      setFieldError(interestOtherInput, "err-interest", "");
+      if (isOther) interestOtherInput.focus();
+    });
+
+    wlForm.addEventListener("submit", async (e) => {
+      e.preventDefault();
+      wlStatus.dataset.state = "";
+      wlStatus.textContent = "";
+
+      // Block spam bots that fill the hidden honeypot input
+      if (document.getElementById("f-gotcha").value) return;
+
+      // Rate-limit rapid repeated submissions (15-second cooldown)
+      const now = Date.now();
+      if (now - lastSubmitTime < 15000) {
+        wlStatus.dataset.state = "error";
+        wlStatus.textContent = "Your inquiry was just recorded. Please wait a moment before submitting again.";
+        return;
+      }
+
+      const okName = validateName();
+      const okEmail = validateEmail();
+      const okOrg = validateOrgOther();
+      const okInterest = validateInterestOther();
+      const okNote = validateCropNote();
+
+      if (!okName || !okEmail || !okOrg || !okInterest || !okNote) {
+        const firstInvalid = wlForm.querySelector(".is-invalid");
+        if (firstInvalid) firstInvalid.focus();
+        wlStatus.dataset.state = "error";
+        wlStatus.textContent = "Please check the highlighted fields above and try again.";
+        return;
+      }
+
+      const name = sanitizeForSheet(nameInput.value);
+      const email = emailInput.value.trim().toLowerCase();
+      const orgCustom = sanitizeForSheet(orgOtherInput.value);
+      const interestCustom = sanitizeForSheet(interestOtherInput.value);
+
+      const sector = orgSelect.value === "other"
+        ? `Other: ${orgCustom}`
+        : orgSelect.options[orgSelect.selectedIndex].text;
+
+      const interest = interestSelect.value === "other"
+        ? `Other: ${interestCustom}`
+        : interestSelect.options[interestSelect.selectedIndex].text;
+
+      const note = cropInput.value.trim() ? sanitizeForSheet(cropInput.value) : "None";
+
+      wlBtn.disabled = true;
+      wlStatus.dataset.state = "loading";
+      wlStatus.textContent = "Recording your inquiry...";
+
+      const payload = {
+        name,
+        email,
+        sector,
+        interest,
+        note: note || "None",
+        model: "Terra M1",
+        submitted_at: new Date().toISOString()
+      };
+
+      try {
+        if (WAITLIST_ENDPOINT) {
+          if (WAITLIST_ENDPOINT.includes("script.google.com")) {
+            // Google Apps Script Web App (uses text/plain to avoid CORS preflight block)
+            await fetch(WAITLIST_ENDPOINT, {
+              method: "POST",
+              mode: "no-cors",
+              headers: { "Content-Type": "text/plain;charset=utf-8" },
+              body: JSON.stringify(payload)
+            });
+          } else if (!WAITLIST_ENDPOINT.startsWith("http")) {
+            // Web3Forms Access Key
+            const res = await fetch("https://api.web3forms.com/submit", {
+              method: "POST",
+              headers: { "Content-Type": "application/json", "Accept": "application/json" },
+              body: JSON.stringify({ access_key: WAITLIST_ENDPOINT, subject: `Terra M1 Inquiry: ${name} (${sector})`, ...payload })
+            });
+            if (!res.ok) throw new Error("Submission failed");
+          } else {
+            // Formspree / Formspark / Basin endpoint URL
+            const res = await fetch(WAITLIST_ENDPOINT, {
+              method: "POST",
+              headers: { "Content-Type": "application/json", "Accept": "application/json" },
+              body: JSON.stringify(payload)
+            });
+            if (!res.ok) throw new Error("Submission failed");
+          }
+        } else {
+          // Local preview fallback when WAITLIST_ENDPOINT is not yet configured
+          await new Promise((r) => setTimeout(r, 500));
+        }
+
+        lastSubmitTime = Date.now();
+        wlBtn.disabled = false;
+        wlStatus.dataset.state = "success";
+        wlStatus.textContent = `Confirmed: ${name} (${email}) has been added to the Terra M1 project update list.`;
+        wlBtn.textContent = "Registered for updates \u2713";
+        wlForm.reset();
+        orgOtherInput.style.display = "none";
+        interestOtherInput.style.display = "none";
+      } catch (err) {
+        wlBtn.disabled = false;
+        wlStatus.dataset.state = "error";
+        wlStatus.textContent = "Could not reach the registration service. Please check your connection and try again.";
+      }
+    });
+
+    // Staggered Scroll-Reveal & Interactive Cursor Spotlight for Bottleneck & Bento Cards
+    const revealCards = document.querySelectorAll(".reveal-card");
+    if ("IntersectionObserver" in window && !params.has("view")) {
+      const revealObs = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("animate-in");
+            revealObs.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.10 });
+      revealCards.forEach((card, i) => {
+        card.style.animationDelay = `${(i % 4) * 45}ms`;
+        revealObs.observe(card);
+      });
+    }
+
+    document.querySelectorAll(".mag-card, .uc-card").forEach((card) => {
+      card.addEventListener("mousemove", (e) => {
+        const r = card.getBoundingClientRect();
+        card.style.setProperty("--mx", `${e.clientX - r.left}px`);
+        card.style.setProperty("--my", `${e.clientY - r.top}px`);
+      });
+    });
+  </script>
+</body>
+</html>
